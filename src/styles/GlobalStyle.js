@@ -13,6 +13,7 @@ const GlobalStyles = createGlobalStyle`
     --gray-2: #363636;
     --white : white;
     --black: black;
+    --carmine-pink: #e76161;
   }
   html{
     font-size: 10px;
@@ -38,6 +39,7 @@ const GlobalStyles = createGlobalStyle`
     width: 90%;
     margin: 0 auto;
   }
+
 /* Smooth Scroll  */
   [data-scrollbar] {
     height: 100vh;
