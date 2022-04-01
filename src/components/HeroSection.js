@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import HeroImg from "../assets/images/hero.png";
+import HeroImg from "../assets/images/hasan.png";
+import Pbutton from "./Pbutton";
 import Ptext from "./Ptext";
 
 const HeroStyle = styled.div`
@@ -45,6 +46,7 @@ const HeroStyle = styled.div`
         position: relative;
         box-sizing: border-box;
         margin: 0px;
+        border-radius: 10px;
       }
     }
   }
@@ -97,6 +99,12 @@ export default function HeroSection() {
                 publishing software like Aldus PageMaker including versions of
                 Lorem Ipsum.
               </Ptext>
+
+              <Pbutton
+                btnLink="/about"
+                btnText="Download Academic CV"
+                outLine={true}
+              />
             </div>
           </div>
 
