@@ -5,7 +5,7 @@ import styled from "styled-components";
 const PbuttonStyle = styled.div`
   margin-top: 2rem;
   .button {
-    padding: 0.7em 2em;
+    padding: 0.7em 1.8em;
     font-size: 2.2rem;
     background-color: ${(props) =>
       props.outLinestyle ? "transparent" : "var(--gray-1)"};

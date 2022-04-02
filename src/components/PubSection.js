@@ -57,7 +57,7 @@ export default function PubSection() {
         </div>
 
         <div class="pubbutton">
-          <Pbutton btnLink="./publication" btnText="All publications" />
+          <Pbutton btnLink="./publication" btnText="All Publications" />
         </div>
       </div>
     </PubSectionStyles>

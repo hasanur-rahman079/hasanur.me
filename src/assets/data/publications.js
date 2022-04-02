@@ -6,11 +6,11 @@ const publications = [
     title:
       "Molecular pharmacology and therapeutic advances of the pentacyclic triterpene lupeol.",
     authors:
-      "Sohag, A.A.M., Hossain, Md.T., Rahaman, Md.A., Rahman, P., Hasan, M.S., Das, R.C., Khan, M.K., Sikder, M.H., Alam, M., Uddin, M.J., Rahman, MD. H., Tahjib-Ul-Arif, Md., Islam, T., Moon, I.S. and Hannan, Md.A.",
+      "Abdullah Al Mamun Sohag, Md. Tahmeed Hossain, Md. ArifurRahaman, Papia Rahman, Mohammad Shahinul Hasan, Rakhal Chandr Das, Md Kibri Khan, Mahmudul Hasan Sikder, Mahboob Alam, Md Jamal Uddin, MD. Hasanur Rahman, Md.Tahjib-Ul-Arif, Tofazzal Islam, II Soo Moon, Md. Abdul Hannan",
     journal: "Phytomedicine",
     issue: "99, p.154012.",
     date: "25 February 2022",
-    doi: "10.1016/j.phymed.2022.154012",
+    doi: "https://doi.org/10.1016/j.phymed.2022.154012",
     if: "JCR IF: 5.340",
   },
   {
@@ -22,7 +22,7 @@ const publications = [
     journal: "Cells",
     issue: "11(4), p.650.",
     date: "13 February 2022",
-    doi: "10.3390/cells11040650",
+    doi: "https://doi.org/10.3390/cells11040650",
     if: "JCR IF: 6.6",
   },
   {

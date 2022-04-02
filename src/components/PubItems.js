@@ -7,14 +7,16 @@ const PubItemsStyles = styled.div`
   padding: 1.2em;
   border-radius: 0.5rem;
   &:hover {
-    background-color: var(--dark-bg);
+    background-color: var(--gray-2);
   }
 
   .pubItems_info {
     h3 {
-      font-family: "Lato", sans-serif;
-      font-size: 2.3rem;
-      font-weight: 700;
+      .pubtitle {
+        font-family: "Lato", sans-serif;
+        font-size: 2.3rem;
+        font-weight: 700;
+      }
     }
 
     .authors {
@@ -58,7 +60,9 @@ const PubItemsStyles = styled.div`
   @media only screen and (max-width: 768px) {
     .pubItems_info {
       h3 {
-        font-size: 2rem;
+        .pubtitle {
+          font-size: 2rem;
+        }
       }
 
       .authors {
@@ -91,15 +95,19 @@ export default function PubItems({
   journaL = "this is the journal name",
   issue = "This is the issue number",
   date = "This is publication date",
-  doi = "this is the link",
+  doi,
   impact = "0.00",
 }) {
   return (
     <PubItemsStyles>
       <div className="pubItems_info">
-        <Link to="{doi}">
-          <h3>{title}</h3>
-        </Link>
+        <h3>
+          {
+            <a className="pubtitle" href={doi} target="__blank">
+              {title}
+            </a>
+          }
+        </h3>
 
         <p className="authors">{authors}</p>
         <p className="journal">
@@ -108,9 +116,13 @@ export default function PubItems({
           <span className="jIssue">{impact}</span>
         </p>
         <p className="date">{date}</p>
-        <Link to="https://doi.org/{doi}" className="doi">
-          {doi}
-        </Link>
+        <div>
+          {
+            <a className="doi" href={doi} target="__blank">
+              {doi}
+            </a>
+          }
+        </div>
       </div>
     </PubItemsStyles>
   );
