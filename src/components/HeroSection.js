@@ -4,6 +4,8 @@ import HeroImg from "../assets/images/hasan.png";
 import Pbutton from "./Pbutton";
 import Ptext from "./Ptext";
 
+import cv from "../assets/pdf/hasanurcv.pdf";
+
 const HeroStyle = styled.div`
   .hero {
     min-height: calc(100vh - 100px);
@@ -41,7 +43,15 @@ const HeroStyle = styled.div`
       }
       }
 
-    }
+      .downloadbtn {
+        padding: 0.7em 1.8em;
+        font-size: 2.2rem;
+        border-radius: 8px;
+        display: inline-block;
+        border: 2px solid var(--gray-1);
+        color:  "var(--gray-1)"
+      }
+
 
     .hero_img {
       img {
@@ -70,12 +80,14 @@ const HeroStyle = styled.div`
         align-items: center;
         font-size: 3rem;
         }
-      }
-      }
+
+        .downloadbtn {
+        font-size: 1.5rem;
+        }
       }
 
     }
-  }
+  }}
 `;
 
 export default function HeroSection() {
@@ -101,11 +113,12 @@ export default function HeroSection() {
               </Ptext>
 
               <div className="downloadbtn">
-                <Pbutton
-                  btnLink="/about"
-                  btnText="View Academic CV"
-                  outLine={true}
-                />
+                <a
+                  href={require("../assets/pdf/hasanurcv.pdf")}
+                  target="_blank"
+                >
+                  View Academic CV
+                </a>
               </div>
             </div>
           </div>
