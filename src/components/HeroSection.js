@@ -103,7 +103,7 @@ export default function HeroSection() {
               <div className="downloadbtn">
                 <Pbutton
                   btnLink="/about"
-                  btnText="Download Academic CV"
+                  btnText="View Academic CV"
                   outLine={true}
                 />
               </div>
