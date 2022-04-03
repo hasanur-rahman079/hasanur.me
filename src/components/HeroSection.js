@@ -35,7 +35,12 @@ const HeroStyle = styled.div`
 
       .hero_info {
         margin-top: 2rem;
+
+        .downloadbtn{
+        margin-top: 4rem;
       }
+      }
+
     }
 
     .hero_img {
@@ -88,23 +93,20 @@ export default function HeroSection() {
 
             <div className="hero_info">
               <Ptext>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
+                A biotechnology graduate interested in molecular signalling
+                pathways, cancer informatics, and molecular immunology.
+                Currently looking for an MSc/PhD position in biotechnology and
+                genetic engineering, focusing on oncogenes and their therapeutic
+                strategies.
               </Ptext>
 
-              <Pbutton
-                btnLink="/about"
-                btnText="Download Academic CV"
-                outLine={true}
-              />
+              <div className="downloadbtn">
+                <Pbutton
+                  btnLink="/about"
+                  btnText="Download Academic CV"
+                  outLine={true}
+                />
+              </div>
             </div>
           </div>
 
