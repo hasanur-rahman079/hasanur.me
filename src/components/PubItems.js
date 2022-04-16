@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const PubItemsStyles = styled.div`
-  background-color: var(--deep-dark);
+  background-color: #282829;
   padding: 1.2em;
   border-radius: 0.5rem;
   &:hover {
@@ -13,14 +13,18 @@ const PubItemsStyles = styled.div`
   .pubItems_info {
     h3 {
       .pubtitle {
-        font-family: "Lato", sans-serif;
+        font-family: "Helvetica Neue", sans-serif;
         font-size: 2.3rem;
         font-weight: 700;
+        color: var(--gray-text);
+
+        &:hover {
+          color: var(--white);
+        }
       }
     }
 
     .authors {
-      font-family: "Lato", sans-serif;
       font-size: 1.6rem;
       line-height: 2.2rem;
       font-weight: 400;
@@ -28,32 +32,35 @@ const PubItemsStyles = styled.div`
     }
 
     .jName {
-      font-family: "Lato", sans-serif;
       font-size: 1.6rem;
-      font-weight: 600;
+      font-weight: 500;
       font-style: italic;
       margin-top: 8px;
       margin-right: 10px !important;
     }
     .jIssue,
     .impact {
-      font-family: "Lato", sans-serif;
       font-size: 1.6rem;
       font-weight: 400;
       margin: 8px 10px 8px 0;
     }
     .date {
-      font-family: "Lato", sans-serif;
       font-size: 1.6rem;
       margin: 8px 0;
     }
 
     .doi {
-      font-family: "Lato", sans-serif;
       font-size: 1.6rem;
       font-weight: 500;
       text-decoration: underline;
+      text-decoration-color: var(--butterscotch);
+      text-decoration-thickness: 3px;
       margin-top: 8px;
+      color: var(--gray-text);
+
+      &:hover{
+      color: var(--white);
+      }
     }
   }
 

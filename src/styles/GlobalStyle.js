@@ -7,20 +7,28 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   :root{
-    --dark-bg: #262626;
-    --gray-1: #BCB4B4;
+    --dark-bg: #1c1e24;
+    --dark-light-bg: #282c34;
     --deep-dark: #1E1E1E;
+    --gray-1: #BCB4B4;
     --gray-2: #363636;
-    --white : white;
+    --gray-text:#d0d5df;
+    --white : #eeeeee;
     --black: black;
     --carmine-pink: #e76161;
+    --butterscotch: #fdb54a;
   }
   html{
     font-size: 10px;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Roboto Mono', monospace;
-    background-color: var(--dark-bg);
+    font-family: 'Inter', sans-serif;
+    background-color: var(--dark-light-bg);
+    color: var(--gray-text);
   }
+
+  h1, h2, h3, h4, h5{
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
   ul,li{
     list-style: none;
   }

@@ -18,7 +18,7 @@ const NavMenuStyles = styled.div`
     padding: 0.7rem 1.5rem 0;
 
     a {
-      color: var(--carmine-pink);
+      color: var(--butterscotch);
       font-size: 1.9rem;
     }
   }
@@ -39,9 +39,8 @@ const NavMenuStyles = styled.div`
 
       a {
         display: inline-block;
-        font-family: "RobotoMono Regular";
         padding: 1rem 1.5rem;
-        font-size: 1.9rem;
+        font-size: 1.7rem;
         color: var(--gray-1);
         outline: none;
       }
@@ -62,25 +61,29 @@ const NavMenuStyles = styled.div`
     cursor: pointer;
     display: none;
     outline: none;
-    background-color: var(--deep-dark);
     padding: 2px 8px;
     margin: auto 0;
     border-radius: 5px;
     * {
       pointer-events: none;
     }
-    .text{
-      font-size: 2rem;
+    .text {
+      font-size: 1.6rem;
       padding-right: 1rem;
     }
     .menuIcon {
-      width: 3rem;
+      width: 2.2rem;
     }
   }
 
   @media only screen and (max-width: 768px) {
     display: block;
     padding: 0;
+
+    .logo {
+      padding: 8px 6px;
+
+    }
 
     /* Step:3 Use the class that defined in the function */
     .hideItems {
@@ -139,7 +142,7 @@ export default function NavMenu() {
         onKeyDown={() => SetShowNav(!showNav)}
         tabIndex={0}
       >
-        <span className="text">Menu</span> 
+        <span className="text">Menu</span>
         <span className="menuIcon">
           <MdMenu />
         </span>
@@ -194,7 +197,7 @@ export default function NavMenu() {
           </NavLink>
         </li>
 
-{/* 
+        {/* 
         <li>
           <NavLink
             to="/works"
@@ -250,7 +253,6 @@ export default function NavMenu() {
             About
           </NavLink>
         </li> */}
-
       </ul>
     </NavMenuStyles>
   );

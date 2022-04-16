@@ -7,6 +7,7 @@ const PbuttonStyle = styled.div`
   .button {
     padding: 0.7em 1.8em;
     font-size: 2.2rem;
+    color: var(--white);
     background-color: ${(props) =>
       props.outLinestyle ? "transparent" : "var(--gray-1)"};
     /* If the outlinestyle is true then the bg will be transparent otherwise if it is false 

@@ -4,14 +4,14 @@ import styled from "styled-components";
 const Subtitle = styled.div`
   text-align: center;
   h2 {
-    font-family: "Montserrat Bold";
+    font-family: "Helvetica Neue", sans-serif;
+    color: var(--butterscotch);
     font-size: 4rem;
     text-transform: uppercase;
   }
 
   p {
-    font-family: "RobotoMono Regular";
-    font-size: 2rem;
+    font-size: 1.9rem;
     margin-top: 0.5rem;
   }
 

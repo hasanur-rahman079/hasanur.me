@@ -4,8 +4,6 @@ import HeroImg from "../assets/images/hasan.png";
 import Pbutton from "./Pbutton";
 import Ptext from "./Ptext";
 
-import cv from "../assets/pdf/hasanurcv.pdf";
-
 const HeroStyle = styled.div`
   .hero {
     min-height: calc(100vh - 100px);
@@ -29,18 +27,21 @@ const HeroStyle = styled.div`
         display: flex;
         flex-direction: column;
         font-size: 4.5rem;
+        font-family: "Helvetica Neue", sans-serif;
+        color: var(--white);
 
         .name {
-          color: var(--carmine-pink);
+          color: var(--butterscotch);
         }
       }
 
       .hero_info {
         margin-top: 2rem;
+        color: var(--gray-text);
 
-        .downloadbtn{
-        margin-top: 4rem;
-      }
+        .downloadbtn {
+          margin-top: 4rem;
+        }
       }
 
       .downloadbtn {
@@ -49,19 +50,22 @@ const HeroStyle = styled.div`
         border-radius: 8px;
         display: inline-block;
         border: 2px solid var(--gray-1);
-        color:  "var(--gray-1)"
+
+        a {
+          color: var(--white);
+        }
       }
 
-
-    .hero_img {
-      img {
-        display: inline-block;
-        max-width: 100%;
-        overflow: hidden;
-        position: relative;
-        box-sizing: border-box;
-        margin: 0px;
-        border-radius: 10px;
+      .hero_img {
+        img {
+          display: inline-block;
+          max-width: 100%;
+          overflow: hidden;
+          position: relative;
+          box-sizing: border-box;
+          margin: 0;
+          border-radius: 10px;
+        }
       }
     }
   }
@@ -71,23 +75,26 @@ const HeroStyle = styled.div`
       margin: 70px 0;
       justify-content: flex-start;
 
-      .left_items{
-        width: 100%;
+      .hero_info{
+        text-align: center;
+      }
+
+      .left_items {
+        width: 100vw;
 
         .hero_heading {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 3rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 3rem;
         }
 
         .downloadbtn {
-        font-size: 1.5rem;
+          font-size: 1.5rem;
         }
       }
-
     }
-  }}
+  }
 `;
 
 export default function HeroSection() {
@@ -97,9 +104,9 @@ export default function HeroSection() {
         <div className="hero">
           <div className="left_items">
             <h1 className="hero_heading">
-              <span>Hello👋</span>
+              <span>Hey,👋</span>
               <span>
-                I'm <span className="name">Hasan</span>
+                I'm <span className="name">Hasan.</span>
               </span>
             </h1>
 

@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 const PStyle = styled.div`
-  font-size: 1.8rem;
-  line-height: 1.4em;
+  font-size: 1.9rem;
+  line-height: 1.7em;
 
   @media only screen and (max-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 `;
 
