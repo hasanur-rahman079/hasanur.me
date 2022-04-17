@@ -191,7 +191,7 @@ const publications = [
     issue: "8, 517",
     date: "19 November 2020",
     doi: "https://doi.org/10.3390/biomedicines8110517",
-    if: "6.081",
+    if: "JCR IF: 6.081",
   },
   {
     id: uuidv4(),
@@ -215,7 +215,7 @@ const publications = [
     issue: "41, 217-233",
     date: "13 Aug 2020",
     doi: "https://doi.org/10.1080/10799893.2020.1805628",
-    if: "2.092",
+    if: "JCR IF: 2.092",
   },
   {
     id: uuidv4(),
@@ -227,7 +227,7 @@ const publications = [
     issue: "pp.1–21",
     date: "7 Aug 2020",
     doi: "https://doi.org/10.1080/07391102.2020.1803969",
-    if: "3.549",
+    if: "JCR IF: 3.549",
   },
   {
     id: uuidv4(),
@@ -251,7 +251,7 @@ const publications = [
     issue: "40, 324-338",
     date: "30 Mar 2020",
     doi: "https://doi.org/10.1080/10799893.2020.1742741",
-    if: "2.092",
+    if: "JCR IF: 2.092",
   },
 ];
 
