@@ -49,6 +49,11 @@ const GlobalStyles = createGlobalStyle`
     margin: 0 auto;
   }
 
+  ::selection {
+    color: black;
+    background: var(--butterscotch);
+  }
+
 /* Smooth Scroll  */
   [data-scrollbar] {
     height: 100vh;

@@ -58,8 +58,8 @@ const PubItemsStyles = styled.div`
       margin-top: 8px;
       color: var(--gray-text);
 
-      &:hover{
-      color: var(--white);
+      &:hover {
+        color: var(--white);
       }
     }
   }
