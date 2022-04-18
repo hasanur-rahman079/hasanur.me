@@ -197,7 +197,7 @@ export default function NavMenu() {
           </NavLink>
         </li>
 
-        {/* 
+        
         <li>
           <NavLink
             to="/works"
@@ -252,7 +252,7 @@ export default function NavMenu() {
           >
             About
           </NavLink>
-        </li> */}
+        </li>
       </ul>
     </NavMenuStyles>
   );

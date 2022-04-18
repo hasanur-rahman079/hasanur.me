@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ExpItems from "../components/ExpItems";
+import ExpSection from "../components/ExpSection";
 import SectionTitle from "../components/SectionTitle";
 
 const ExperiencesStyles = styled.div`
@@ -17,7 +17,7 @@ export const Experiences = () => {
         />
 
         <div className="allExp">
-          <ExpItems />
+          <ExpSection />
         </div>
       </div>
     </ExperiencesStyles>

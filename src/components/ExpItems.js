@@ -35,19 +35,28 @@ const ExpItemsStyles = styled.div`
   }
 `;
 
-export default function ExpItems() {
+export default function ExpItems({
+  title = "This is the job title",
+  institute = "Name of Institue",
+  weblink = "www.example.com",
+  address = "this is the office address",
+  time = "jan-feb",
+  focus = "The working areas",
+}) {
   return (
     <ExpItemsStyles>
       <div className="expItemsInfo">
         <h3>
-          <span className="title">Research Assistant</span> at{" "}
-          <span className="company">ABex Bio-Res</span>
+          <span className="title">
+            {title} at {institute}
+          </span>
         </h3>
-        <p className="address">East Azampur, Dhaka-1230, Bangladesh</p>
-        <p className="focus">Focus: </p>
+        <span>{weblink}</span>
+        <p className="address">{address}</p>
+        <p className="focus">{focus}</p>
 
         <div className="time">
-          <span className="date">Aug2019-present</span>
+          <span className="date">{time}</span>
         </div>
       </div>
     </ExpItemsStyles>
