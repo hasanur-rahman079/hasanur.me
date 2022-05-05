@@ -5,20 +5,25 @@ const ExpItemsStyles = styled.div`
   .expItemsInfo {
     h3 {
       font-size: 2rem;
+      line-height: 3.5rem;
       .title {
         font-size: 2rem;
-      }
-      .company {
-        font-size: 2rem;
+
+        .Institute{
+          color: white;
+          text-decoration: underline;
+        }
       }
     }
 
     .address {
       font-size: 1.7rem;
+      margin-bottom: 15px;
     }
 
     .focus {
       font-size: 1.7rem;
+      line-height: 2.4rem;
     }
 
     .time {
@@ -48,12 +53,11 @@ export default function ExpItems({
       <div className="expItemsInfo">
         <h3>
           <span className="title">
-            {title} at {institute}
+            {title} at <a className="Institute" href={weblink} target="_blank" rel="noopener noreferrer">{institute}</a>
           </span>
         </h3>
-        <span>{weblink}</span>
         <p className="address">{address}</p>
-        <p className="focus">{focus}</p>
+        <p className="focus">Working areas: {focus}</p>
 
         <div className="time">
           <span className="date">{time}</span>
