@@ -5,9 +5,10 @@ const ExpItemsStyles = styled.div`
   .expItemsInfo {
     h3 {
       font-size: 2rem;
-      line-height: 3.5rem;
+      line-height: 2.5rem;
       .title {
         font-size: 2rem;
+        line-height: 2.7rem;
 
         .Institute{
           color: white;
@@ -18,7 +19,7 @@ const ExpItemsStyles = styled.div`
 
     .address {
       font-size: 1.7rem;
-      margin-bottom: 15px;
+      margin: 10px 0;
     }
 
     .focus {
@@ -27,11 +28,11 @@ const ExpItemsStyles = styled.div`
     }
 
     .time {
-      margin-top: 2rem;
+      margin-top: 1.5rem;
 
       .date {
-        background-color: var(--gray-1);
-        color: black;
+        background-color: var(--gray-2);
+        color: var(--gray-1);
         padding: 0.5em 0.7em;
         border-radius: 5px;
         font-size: 1.4rem;
