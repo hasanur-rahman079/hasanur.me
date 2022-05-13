@@ -198,7 +198,7 @@ export default function NavMenu() {
         </li>
 
         
-        <li>
+        {/* <li>
           <NavLink
             to="/works"
             onClick={() => SetShowNav(!showNav)}
@@ -208,7 +208,7 @@ export default function NavMenu() {
           >
             Works
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink
             to="/experiences"
@@ -220,7 +220,7 @@ export default function NavMenu() {
             Experiences
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink
             to="/awards"
             onClick={() => SetShowNav(!showNav)}
@@ -230,8 +230,8 @@ export default function NavMenu() {
           >
             Awards
           </NavLink>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <NavLink
             to="/skills"
             onClick={() => SetShowNav(!showNav)}
@@ -241,8 +241,8 @@ export default function NavMenu() {
           >
             Skills
           </NavLink>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <NavLink
             to="/about"
             onClick={() => SetShowNav(!showNav)}
@@ -252,7 +252,7 @@ export default function NavMenu() {
           >
             About
           </NavLink>
-        </li>
+        </li> */}
       </ul>
     </NavMenuStyles>
   );

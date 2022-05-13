@@ -4,6 +4,30 @@ const publications = [
   {
     id: uuidv4(),
     title:
+      "Protective effects of fucoidan against kidney diseases: Pharmacological insights and future perspectives.",
+    authors:
+      "Md. SarwarZahan, Adeba Hasana, MD. HasanurRahmana, Kamrun Nahar Meem, Akhi Moni, Md. Abdul Hannan, Md Jamal Uddin",
+    journal: "International Journal of Biological Macromolecules",
+    issue: "209PB, 2022",
+    date: "29 April 2022",
+    doi: "https://doi.org/10.1016/j.ijbiomac.2022.04.192",
+    if: "JCR IF: 6.953",
+  },
+  {
+    id: uuidv4(),
+    title:
+      "Autophagy Modulation in Aggresome Formation: Emerging Implications and Treatments of Alzheimer’s Disease.",
+    authors:
+      "Md. Ataur Rahman, MD. Hasanur Rahman, A. N. M. Mamun-Or-Rashid, Hongik Hwang, Sooyoung Chung, Bonglee Kim and Hyewhon Rhim",
+    journal: "Biomedicines",
+    issue: "10(5)",
+    date: "29 April 2022",
+    doi: "https://doi.org/10.3390/biomedicines10051027",
+    if: "JCR IF: 6.081",
+  },
+  {
+    id: uuidv4(),
+    title:
       "Molecular pharmacology and therapeutic advances of the pentacyclic triterpene lupeol.",
     authors:
       "Abdullah Al Mamun Sohag, Md. Tahmeed Hossain, Md. ArifurRahaman, Papia Rahman, Mohammad Shahinul Hasan, Rakhal Chandr Das, Md Kibri Khan, Mahmudul Hasan Sikder, Mahboob Alam, Md Jamal Uddin, MD. Hasanur Rahman, Md.Tahjib-Ul-Arif, Tofazzal Islam, II Soo Moon, Md. Abdul Hannan",
