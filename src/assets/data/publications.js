@@ -11,6 +11,7 @@ const publications = [
     issue: "209PB, 2022",
     date: "29 April 2022",
     doi: "https://doi.org/10.1016/j.ijbiomac.2022.04.192",
+    dbdoi: "10.1016/j.ijbiomac.2022.04.192",
     if: "JCR IF: 6.953",
   },
   {
@@ -23,6 +24,7 @@ const publications = [
     issue: "10(5)",
     date: "29 April 2022",
     doi: "https://doi.org/10.3390/biomedicines10051027",
+    dbdoi: "10.3390/biomedicines10051027",
     if: "JCR IF: 6.081",
   },
   {
@@ -35,6 +37,7 @@ const publications = [
     issue: "99, p.154012.",
     date: "25 February 2022",
     doi: "https://doi.org/10.1016/j.phymed.2022.154012",
+    dbdoi: "10.1016/j.phymed.2022.154012",
     if: "JCR IF: 5.340",
   },
   {
@@ -47,6 +50,7 @@ const publications = [
     issue: "11(4), p.650.",
     date: "13 February 2022",
     doi: "https://doi.org/10.3390/cells11040650",
+    dbdoi: "10.3390/cells11040650",
     if: "JCR IF: 6.6",
   },
   {

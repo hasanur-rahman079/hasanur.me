@@ -49,17 +49,24 @@ const PubItemsStyles = styled.div`
       margin: 8px 0;
     }
 
-    .doi {
-      font-size: 1.6rem;
-      font-weight: 500;
-      text-decoration: underline;
-      text-decoration-color: var(--butterscotch);
-      text-decoration-thickness: 3px;
-      margin-top: 8px;
-      color: var(--gray-text);
+    .metrics {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
 
-      &:hover {
-        color: var(--white);
+      .doi {
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-decoration: underline;
+        text-decoration-color: var(--butterscotch);
+        text-decoration-thickness: 3px;
+        margin-top: 8px;
+        color: var(--gray-text);
+
+        &:hover {
+          color: var(--white);
+        }
       }
     }
   }
@@ -80,6 +87,7 @@ const PubItemsStyles = styled.div`
       .jName {
         font-size: 1.4rem;
       }
+
       .jIssue,
       .impact {
         font-size: 1.4rem;
@@ -89,8 +97,10 @@ const PubItemsStyles = styled.div`
         font-size: 1.4rem;
       }
 
-      .doi {
-        font-size: 1.4rem;
+      .metrics {
+        .doi {
+          font-size: 1.4rem;
+        }
       }
     }
   }
@@ -103,6 +113,7 @@ export default function PubItems({
   issue = "This is the issue number",
   date = "This is publication date",
   doi,
+  dbdoi,
   impact = "0.00",
 }) {
   return (
@@ -123,12 +134,20 @@ export default function PubItems({
           <span className="jIssue">{impact}</span>
         </p>
         <p className="date">{date}</p>
-        <div>
-          {
-            <a className="doi" href={doi} target="__blank">
-              {doi}
-            </a>
-          }
+
+        <div className="metrics">
+          <div>
+            {
+              <a className="doi" href={doi} target="__blank">
+                Read Article
+              </a>
+            }
+          </div>
+          <span
+            class="__dimensions_badge_embed__"
+            data-doi="{bddoi}"
+            data-style="large_rectangle"
+          ></span>
         </div>
       </div>
     </PubItemsStyles>

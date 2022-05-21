@@ -50,6 +50,7 @@ export default function PubSection() {
                 issue={publication.issue}
                 date={publication.date}
                 doi={publication.doi}
+                dbdoi={publication.dbdoi}
                 impact={publication.if}
               />
             );
