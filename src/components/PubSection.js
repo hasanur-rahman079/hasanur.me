@@ -33,31 +33,33 @@ const PubSectionStyles = styled.div`
 export default function PubSection() {
   return (
     <PubSectionStyles>
-      <div class="container">
+      <div className="container">
         <SectionTitle
           title="Publications"
           subTitle="Find my recent publications here"
         />
 
         <div className="pubsecItems">
-          {publications.map((publication, index) => {
+          {publications.map((publication, index, i) => {
             if (index >= 4) return;
             return (
-              <PubItems
-                title={publication.title}
-                authors={publication.authors}
-                journaL={publication.journal}
-                issue={publication.issue}
-                date={publication.date}
-                doi={publication.doi}
-                dbdoi={publication.dbdoi}
-                impact={publication.if}
-              />
+              <div key={publication.id}>
+                <PubItems
+                  title={publication.title}
+                  authors={publication.authors}
+                  journaL={publication.journal}
+                  issue={publication.issue}
+                  date={publication.date}
+                  doi={publication.doi}
+                  impact={publication.if}
+                  metric={publication.metric}
+                />
+              </div>
             );
           })}
         </div>
 
-        <div class="pubbutton">
+        <div className="pubbutton">
           <Pbutton btnLink="./publications" btnText="All Publications" />
         </div>
       </div>

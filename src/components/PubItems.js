@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const PubItemsStyles = styled.div`
@@ -107,14 +106,15 @@ const PubItemsStyles = styled.div`
 `;
 
 export default function PubItems({
+  id,
   title = "This is title",
   authors = "this is the author list",
   journaL = "this is the journal name",
   issue = "This is the issue number",
   date = "This is publication date",
-  doi,
-  dbdoi,
+  doi = "this is link",
   impact = "0.00",
+  metric = "this is 000",
 }) {
   return (
     <PubItemsStyles>
@@ -143,9 +143,10 @@ export default function PubItems({
               </a>
             }
           </div>
+
           <span
-            class="__dimensions_badge_embed__"
-            data-doi="{bddoi}"
+            className="__dimensions_badge_embed__"
+            data-doi={metric}
             data-style="large_rectangle"
           ></span>
         </div>

@@ -32,7 +32,7 @@ export default function SectionTitle({
 }) {
   return (
     <Subtitle>
-      <div class="container">
+      <div className="container">
         <h2>{title}</h2>
         <p>{subTitle}</p>
       </div>

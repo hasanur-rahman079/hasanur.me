@@ -1,8 +1,8 @@
-import { v4 as uuidv4 } from "uuid";
+// import { v4 as uuidv4 } from "uuid";
 
 const publications = [
   {
-    id: uuidv4(),
+    id: 1,
     title:
       "Protective effects of fucoidan against kidney diseases: Pharmacological insights and future perspectives.",
     authors:
@@ -11,11 +11,11 @@ const publications = [
     issue: "209PB, 2022",
     date: "29 April 2022",
     doi: "https://doi.org/10.1016/j.ijbiomac.2022.04.192",
-    dbdoi: "10.1016/j.ijbiomac.2022.04.192",
+    metric: "10.1016/j.ijbiomac.2022.04.192",
     if: "JCR IF: 6.953",
   },
   {
-    id: uuidv4(),
+    id: 2,
     title:
       "Autophagy Modulation in Aggresome Formation: Emerging Implications and Treatments of Alzheimer’s Disease.",
     authors:
@@ -24,11 +24,11 @@ const publications = [
     issue: "10(5)",
     date: "29 April 2022",
     doi: "https://doi.org/10.3390/biomedicines10051027",
-    dbdoi: "10.3390/biomedicines10051027",
+    metric: "10.3390/biomedicines10051027",
     if: "JCR IF: 6.081",
   },
   {
-    id: uuidv4(),
+    id: 3,
     title:
       "Molecular pharmacology and therapeutic advances of the pentacyclic triterpene lupeol.",
     authors:
@@ -37,11 +37,11 @@ const publications = [
     issue: "99, p.154012.",
     date: "25 February 2022",
     doi: "https://doi.org/10.1016/j.phymed.2022.154012",
-    dbdoi: "10.1016/j.phymed.2022.154012",
+    metric: "10.1016/j.phymed.2022.154012",
     if: "JCR IF: 5.340",
   },
   {
-    id: uuidv4(),
+    id: 4,
     title:
       "Recent Advances in Ovarian Cancer: Therapeutic Strategies, Potential Biomarkers, and Technological Improvements.",
     authors:
@@ -50,11 +50,11 @@ const publications = [
     issue: "11(4), p.650.",
     date: "13 February 2022",
     doi: "https://doi.org/10.3390/cells11040650",
-    dbdoi: "10.3390/cells11040650",
+    metric: "10.3390/cells11040650",
     if: "JCR IF: 6.6",
   },
   {
-    id: uuidv4(),
+    id: 5,
     title:
       "p53 Modulation of Autophagy Signaling in Cancer Therapies: Perspectives Mechanism and Therapeutic Targets",
     authors:
@@ -63,10 +63,11 @@ const publications = [
     issue: "10",
     date: "26 January 2022",
     doi: "https://doi.org/10.3389/fcell.2022.761080",
+    metric: "10.3389/fcell.2022.761080",
     if: "JCR IF: 6.684",
   },
   {
-    id: uuidv4(),
+    id: 6,
     title:
       "A Comprehensive Review of Recent Advancements in Cancer Immunotherapy and Generation of CAR T Cell by CRISPR-Cas9.",
     authors:
@@ -75,10 +76,11 @@ const publications = [
     issue: "10(1)",
     date: "26 January 2022",
     doi: "https://doi.org/10.3390/pr10010016",
+    metric: "10.3390/pr10010016",
     if: "JCR IF: 2.847",
   },
   {
-    id: uuidv4(),
+    id: 7,
     title:
       "Potential Therapeutic Action of Autophagy in Gastric Cancer Managements: Novel Treatment Strategies and Pharmacological Interventions. ",
     authors:
@@ -87,10 +89,11 @@ const publications = [
     issue: "12",
     date: "28 January 2022",
     doi: "https://doi.org/10.3389/fphar.2021.813703",
+    metric: "10.3389/fphar.2021.813703",
     if: "JCR IF: 5.810",
   },
   {
-    id: uuidv4(),
+    id: 8,
     title:
       "Evaluation of in vitro and in silico anti-inflammatory potential of some selected medicinal plants of Bangladesh against cyclooxygenase-II enzyme",
     authors:
@@ -99,10 +102,11 @@ const publications = [
     issue: "285, 114900",
     date: "15 December 2021",
     doi: "https://doi.org/10.1016/j.jep.2021.114900",
+    metric: "10.1016/j.jep.2021.114900",
     if: "JCR IF: 4.360",
   },
   {
-    id: uuidv4(),
+    id: 9,
     title:
       "Efficacy of complementary medicine for nonsteroidal anti-inflammatory drug-induced small intestinal injuries: A narrative review.",
     authors:
@@ -111,10 +115,11 @@ const publications = [
     issue: "100, e28005.",
     date: "03 December 2021",
     doi: "https://doi.org/10.1097/MD.0000000000028005",
+    metric: "10.1097/MD.0000000000028005",
     if: "JCR IF: 1.889",
   },
   {
-    id: uuidv4(),
+    id: 10,
     title:
       "Metabolite profiling, anti-inflammatory, analgesic potentials of edible herb Colocasia gigantea and molecular docking study against COX-II enzyme ",
     authors:
@@ -123,10 +128,11 @@ const publications = [
     issue: "285, 114900.",
     date: "28 August 2021",
     doi: "https://doi.org/10.1016/j.jep.2021.114577",
+    metric: "10.1016/j.jep.2021.114577",
     if: "JCR IF: 4.360",
   },
   {
-    id: uuidv4(),
+    id: 11,
     title:
       "Candidate Antiviral Drugs for COVID-19 and Their Environmental Implications: A Comprehensive Analysis. Environmental Science and Pollution Research",
     authors:
@@ -135,10 +141,11 @@ const publications = [
     issue: "28, 59570-59593.",
     date: "12 September 2021",
     doi: "https://doi.org/10.1007/s11356-021-16096-3",
+    metric: "10.1007/s11356-021-16096-3",
     if: "JCR IF: 4.223",
   },
   {
-    id: uuidv4(),
+    id: 12,
     title:
       "Potential of Bioactive Food Components against Gastric Cancer: Insights into Molecular Mechanism and Therapeutic Targets",
     authors:
@@ -147,10 +154,11 @@ const publications = [
     issue: "13, 4502.",
     date: "7 September 2021",
     doi: "https://doi.org/10.3390/cancers13184502",
+    metric: "10.3390/cancers13184502",
     if: "JCR IF: 6.639",
   },
   {
-    id: uuidv4(),
+    id: 13,
     title:
       "Analysis of SYK Gene as a Prognostic Biomarker and Suggested Potential Bioactive Phytochemicals as an Alternative Therapeutic Option for Colorectal Cancer: An In-Silico Pharmaco-Informatics Investigation.",
     authors:
@@ -159,10 +167,11 @@ const publications = [
     issue: "11, 888",
     date: "6 September 2021",
     doi: "https://doi.org/10.3390/jpm11090888",
+    metric: "10.3390/jpm11090888",
     if: "JCR IF: 4.945",
   },
   {
-    id: uuidv4(),
+    id: 14,
     title:
       "Phytochemicals as a Complement to Cancer Chemotherapy: Pharmacological Modulation of the Autophagy-Apoptosis Pathway. Frontiers in Pharmacology",
     authors:
@@ -171,10 +180,11 @@ const publications = [
     issue: "12",
     date: "07 May 2021",
     doi: "https://doi.org/10.3389/fphar.2021.639628",
+    metric: "10.3389/fphar.2021.639628",
     if: "JCR IF: 5.810",
   },
   {
-    id: uuidv4(),
+    id: 15,
     title:
       "Potential Therapeutic Role of Phytochemicals to Mitigate Mitochondrial Dysfunctions in Alzheimer’s Disease",
     authors:
@@ -183,10 +193,11 @@ const publications = [
     issue: "10, 23",
     date: "28 December 2020",
     doi: "https://doi.org/10.3390/antiox10010023",
+    metric: "10.3390/antiox10010023",
     if: "JCR IF: 6.313",
   },
   {
-    id: uuidv4(),
+    id: 16,
     title:
       "Modulatory Effects of Autophagy on APP Processing as a Potential Treatment Target for Alzheimer’s Disease",
     authors:
@@ -195,10 +206,11 @@ const publications = [
     issue: "9, 5",
     date: "24 December 2020",
     doi: "https://doi.org/10.3390/biomedicines9010005",
+    metric: "10.3390/biomedicines9010005",
     if: "JCR IF: 6.313",
   },
   {
-    id: uuidv4(),
+    id: 17,
     title:
       "Assessing drug repurposing option for emerging viral diseases: concerns, solutions, and challenges for forthcoming viral battles",
     authors:
@@ -207,10 +219,11 @@ const publications = [
     issue: "4(1), p.74.",
     date: "14 December 2020",
     doi: "https://doi.org/10.5455/jabet.2021.d109",
+    metric: "10.5455/jabet.2021.d109",
     if: "[Scopus Indexed]",
   },
   {
-    id: uuidv4(),
+    id: 18,
     title:
       "Molecular Insights into the Multifunctional Role of Natural Compounds: Autophagy Modulation and Cancer Prevention",
     authors:
@@ -219,10 +232,11 @@ const publications = [
     issue: "8, 517",
     date: "19 November 2020",
     doi: "https://doi.org/10.3390/biomedicines8110517",
+    metric: "10.3390/biomedicines8110517",
     if: "JCR IF: 6.081",
   },
   {
-    id: uuidv4(),
+    id: 19,
     title:
       "Pathogenesis, Diagnosis and Possible Therapeutic Options for COVID-19.",
     authors:
@@ -231,10 +245,11 @@ const publications = [
     issue: "11(4), em00755",
     date: "07 Oct 2020",
     doi: "https://doi.org/10.29333/jcei/8564",
+    metric: "10.29333/jcei/8564",
     if: "[DOAJ Indexed]",
   },
   {
-    id: uuidv4(),
+    id: 20,
     title:
       "Analysis of plant-derived phytochemicals as anticancer agents targeting cyclin dependent kinase-2, human topoisomerase IIa and vascular endothelial growth factor receptor-2",
     authors:
@@ -243,10 +258,11 @@ const publications = [
     issue: "41, 217-233",
     date: "13 Aug 2020",
     doi: "https://doi.org/10.1080/10799893.2020.1805628",
+    metric: "10.1080/10799893.2020.1805628",
     if: "JCR IF: 2.092",
   },
   {
-    id: uuidv4(),
+    id: 21,
     title:
       "Designing novel epitope-based polyvalent vaccines against herpes simplex virus-1 and 2 exploiting the immunoinformatics approach",
     authors:
@@ -255,10 +271,11 @@ const publications = [
     issue: "pp.1–21",
     date: "7 Aug 2020",
     doi: "https://doi.org/10.1080/07391102.2020.1803969",
+    metric: "110.1080/07391102.2020.1803969",
     if: "JCR IF: 3.549",
   },
   {
-    id: uuidv4(),
+    id: 22,
     title:
       "Current knowledge on mechanisms involved in SARS-CoV-2 infection and kidney diseases",
     authors:
@@ -267,10 +284,11 @@ const publications = [
     issue: "3(4), p.30",
     date: "19 July 2020",
     doi: "https://doi.org/10.5455/jabet.2020.d153",
+    metric: "10.5455/jabet.2020.d153",
     if: "[Scopus Indexed]",
   },
   {
-    id: uuidv4(),
+    id: 23,
     title:
       "Curcumin analogs as the inhibitors of TLR4 pathway in inflammation and their drug like potentialities: a computer-based study",
     authors:
@@ -279,6 +297,7 @@ const publications = [
     issue: "40, 324-338",
     date: "30 Mar 2020",
     doi: "https://doi.org/10.1080/10799893.2020.1742741",
+    metric: "10.1080/10799893.2020.1742741",
     if: "JCR IF: 2.092",
   },
 ];
