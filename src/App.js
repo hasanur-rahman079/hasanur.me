@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavMenu from "./components/NavMenu";
+import ScrollToTop from "./containers/ScrollToTop";
+import UseScript from "./containers/UseScript";
 import { About } from "./pages/About";
 import { Awards } from "./pages/Awards";
 import { Experiences } from "./pages/Experiences";
@@ -13,6 +15,8 @@ function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
+        <UseScript />
         <NavMenu />
         <Routes>
           <Route path="/" element={<Home />} />

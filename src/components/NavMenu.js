@@ -132,6 +132,7 @@ const NavMenuStyles = styled.div`
 
 export default function NavMenu() {
   const [showNav, SetShowNav] = useState(false);
+
   return (
     <NavMenuStyles>
       <div

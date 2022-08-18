@@ -43,8 +43,8 @@ const PublicationsStyles = styled.div`
   .allpub {
     margin-top: 3rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-gap: 1.8em;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media only screen and (max-width: 768px) {
@@ -113,18 +113,20 @@ export const Publications = () => {
 
         <div className="allpub">
           {pubData.map((publication) => (
-            <PubItems
-              key={publication.id}
-              title={publication.title}
-              authors={publication.authors}
-              journaL={publication.journal}
-              issue={publication.issue}
-              date={publication.date}
-              doi={publication.doi}
-              metric={publication.metric}
-              impact={publication.if}
-              plum={publication.plum}
-            />
+            <div className="pubItemsContainer">
+              <PubItems
+                key={publication.id}
+                title={publication.title}
+                authors={publication.authors}
+                journaL={publication.journal}
+                issue={publication.issue}
+                date={publication.date}
+                doi={publication.doi}
+                metric={publication.metric}
+                impact={publication.if}
+                plum={publication.plum}
+              />
+            </div>
           ))}
         </div>
       </div>
