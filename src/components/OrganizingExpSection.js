@@ -1,7 +1,7 @@
 import React from "react";
 import ExpItems from "./OrganizingExpItems";
 import styled from "styled-components";
-import organizings from "../assets/data/orgexp";
+import organizings from "../assets/data/experience";
 
 const OrganizingExpSectionStyle = styled.div`
   .expsecItems {
@@ -19,6 +19,19 @@ const OrganizingExpSectionStyle = styled.div`
 `;
 
 export default function OrganizingExpSection() {
+
+  let shopingList = [];
+
+  shopingList = ["Milk", "Bread", "Apple"];
+  shopingList.splice (1, 0, "Banana", "Eggs")
+  shopingList.pop();
+  shopingList.sort();
+  let findMilk = shopingList.indexOf('Milk');
+  shopingList.splice(1, 0, "Carrots", "Lettuce")
+
+  console.log(shopingList);
+  console.log(findMilk);
+
   return (
     <OrganizingExpSectionStyle>
       <div className="expsecItems">

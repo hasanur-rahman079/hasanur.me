@@ -4,32 +4,38 @@ import styled from "styled-components";
 import { MdSearch } from "react-icons/md";
 import PubItems from "../components/PubItems";
 import PubInfo from "../assets/data/publications";
+import publications from "../assets/data/publications";
 
 const PublicationsStyles = styled.div`
   padding: 10rem 0;
-
+  .pubNumber {
+    text-align: center;
+    margin-top: 10px;
+  }
   .pubSearch {
     position: relative;
     width: 300px;
     margin-top: 5rem;
 
-    input {
-      width: 100%;
-      font-size: 2rem;
-      padding: 0.8rem;
-      color: var(--black);
-      border-radius: 6px;
-      outline: none;
-      border: none;
-    }
+    form {
+      input {
+        width: 100%;
+        font-size: 2rem;
+        padding: 0.8rem;
+        color: var(--black);
+        border-radius: 6px;
+        outline: none;
+        border: none;
+      }
 
-    .searchIcon {
-      position: absolute;
-      width: 2rem;
-      right: 1rem;
+      .searchIcon {
+        position: absolute;
+        width: 2rem;
+        right: 1rem;
 
-      path {
-        color: var(--deep-dark);
+        path {
+          color: var(--deep-dark);
+        }
       }
     }
   }
@@ -89,6 +95,10 @@ export const Publications = () => {
           subTitle="Find my recent publications here"
         />
 
+        <div className="pubNumber">
+          <h1>Total publicaitons {publications.length} </h1>
+        </div>
+
         <div className="pubSearch">
           <form>
             <input
@@ -111,7 +121,9 @@ export const Publications = () => {
               issue={publication.issue}
               date={publication.date}
               doi={publication.doi}
+              metric={publication.metric}
               impact={publication.if}
+              plum={publication.plum}
             />
           ))}
         </div>

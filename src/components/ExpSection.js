@@ -1,6 +1,6 @@
 import React from "react";
 import ExpItems from "./ExpItems";
-import researchs from "../assets/data/experiences";
+import researchs from "../assets/data/experience";
 import styled from "styled-components";
 
 const ExpSectionStyle = styled.div`

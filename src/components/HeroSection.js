@@ -75,7 +75,7 @@ const HeroStyle = styled.div`
       margin: 70px 0;
       justify-content: flex-start;
 
-      .hero_info{
+      .hero_info {
         text-align: center;
       }
 
@@ -106,23 +106,25 @@ export default function HeroSection() {
             <h1 className="hero_heading">
               <span>Hey,👋</span>
               <span>
-                I'm <span className="name">Hasan.</span>
+                I'm <span className="name">Hasanur.</span>
               </span>
             </h1>
 
             <div className="hero_info">
               <Ptext>
-                A biotechnology graduate interested in molecular signalling
-                pathways, cancer informatics, and molecular immunology.
-                Currently looking for an MSc/PhD position in biotechnology and
-                genetic engineering, focusing on oncogenes and their therapeutic
-                strategies.
+                A biotechnology and genetic engineering graduate interested in
+                cancer informatics, and molecular drug designing and
+                development. Currently studying MSc in Department of Cancer
+                Preventive Material Development, majoring in Biomedical Science
+                and Technology, Graduate School, Kung Hee University, Seoul
+                Campus.
               </Ptext>
 
               <div className="downloadbtn">
                 <a
-                  href={require("../assets/pdf/hasanurcv.pdf")}
+                  href={require("../assets/pdf/Hasan_CV_updated July.pdf")}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   View Academic CV
                 </a>

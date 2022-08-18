@@ -2,6 +2,20 @@
 
 const publications = [
   {
+    id: 24,
+    title:
+      "The Effect of Laminaria japonica on Metabolic Syndrome: A Systematic Review of Its Efficacy and Mechanism of Action",
+    authors:
+      "In-Seon Lee, Seok-Jae Ko, Yu Na Lee, Gahyun Lee, MD. Hasanur Rahman and Bonglee Kim",
+    journal: "Nutrients",
+    issue: "14(15), 3046",
+    date: "25 July 2022",
+    doi: "https://doi.org/10.3390/nu14153046",
+    metric: "10.3390/nu14153046",
+    plum: "https://plu.mx/plum/a/?doi=10.3390/nu14153046",
+    if: "JCR IF: 6.706",
+  },
+  {
     id: 1,
     title:
       "Protective effects of fucoidan against kidney diseases: Pharmacological insights and future perspectives.",
@@ -12,6 +26,7 @@ const publications = [
     date: "29 April 2022",
     doi: "https://doi.org/10.1016/j.ijbiomac.2022.04.192",
     metric: "10.1016/j.ijbiomac.2022.04.192",
+    plum: "https://plu.mx/plum/a/?doi=10.1016/j.ijbiomac.2022.04.192",
     if: "JCR IF: 6.953",
   },
   {
@@ -25,6 +40,7 @@ const publications = [
     date: "29 April 2022",
     doi: "https://doi.org/10.3390/biomedicines10051027",
     metric: "10.3390/biomedicines10051027",
+    plum: "https://plu.mx/plum/a/?doi=10.3390/biomedicines10051027",
     if: "JCR IF: 6.081",
   },
   {
@@ -38,6 +54,7 @@ const publications = [
     date: "25 February 2022",
     doi: "https://doi.org/10.1016/j.phymed.2022.154012",
     metric: "10.1016/j.phymed.2022.154012",
+    plum: "https://plu.mx/plum/a/?doi=10.1016/j.phymed.2022.154012",
     if: "JCR IF: 5.340",
   },
   {
@@ -51,6 +68,7 @@ const publications = [
     date: "13 February 2022",
     doi: "https://doi.org/10.3390/cells11040650",
     metric: "10.3390/cells11040650",
+    plum: "https://plu.mx/plum/a/?doi=10.3390/cells11040650",
     if: "JCR IF: 6.6",
   },
   {
@@ -64,6 +82,7 @@ const publications = [
     date: "26 January 2022",
     doi: "https://doi.org/10.3389/fcell.2022.761080",
     metric: "10.3389/fcell.2022.761080",
+    plum: "https://plu.mx/plum/a/?doi=10.3389/fcell.2022.761080",
     if: "JCR IF: 6.684",
   },
   {
@@ -77,6 +96,7 @@ const publications = [
     date: "26 January 2022",
     doi: "https://doi.org/10.3390/pr10010016",
     metric: "10.3390/pr10010016",
+    plum: "https://plu.mx/plum/a/?doi=10.3390/pr10010016",
     if: "JCR IF: 2.847",
   },
   {
@@ -90,6 +110,7 @@ const publications = [
     date: "28 January 2022",
     doi: "https://doi.org/10.3389/fphar.2021.813703",
     metric: "10.3389/fphar.2021.813703",
+    plum: "https://plu.mx/plum/a/?doi=10.3389/fphar.2021.813703",
     if: "JCR IF: 5.810",
   },
   {
@@ -103,6 +124,7 @@ const publications = [
     date: "15 December 2021",
     doi: "https://doi.org/10.1016/j.jep.2021.114900",
     metric: "10.1016/j.jep.2021.114900",
+    plum: "https://plu.mx/plum/a/?doi=10.1016/j.jep.2021.114900",
     if: "JCR IF: 4.360",
   },
   {
@@ -116,6 +138,7 @@ const publications = [
     date: "03 December 2021",
     doi: "https://doi.org/10.1097/MD.0000000000028005",
     metric: "10.1097/MD.0000000000028005",
+    plum: "https://plu.mx/plum/a/?doi=10.1097/MD.0000000000028005",
     if: "JCR IF: 1.889",
   },
   {
@@ -129,6 +152,7 @@ const publications = [
     date: "28 August 2021",
     doi: "https://doi.org/10.1016/j.jep.2021.114577",
     metric: "10.1016/j.jep.2021.114577",
+    plum: "https://plu.mx/plum/a/?doi=10.1016/j.jep.2021.114577",
     if: "JCR IF: 4.360",
   },
   {
@@ -142,6 +166,7 @@ const publications = [
     date: "12 September 2021",
     doi: "https://doi.org/10.1007/s11356-021-16096-3",
     metric: "10.1007/s11356-021-16096-3",
+    plum: "https://plu.mx/plum/a/?doi=10.1007/s11356-021-16096-3",
     if: "JCR IF: 4.223",
   },
   {
@@ -155,6 +180,7 @@ const publications = [
     date: "7 September 2021",
     doi: "https://doi.org/10.3390/cancers13184502",
     metric: "10.3390/cancers13184502",
+    plum: "https://plu.mx/plum/a/?doi=10.3390/cancers13184502",
     if: "JCR IF: 6.639",
   },
   {
@@ -168,6 +194,7 @@ const publications = [
     date: "6 September 2021",
     doi: "https://doi.org/10.3390/jpm11090888",
     metric: "10.3390/jpm11090888",
+    plum: "https://plu.mx/plum/a/?doi=10.3390/jpm11090888",
     if: "JCR IF: 4.945",
   },
   {
@@ -181,6 +208,7 @@ const publications = [
     date: "07 May 2021",
     doi: "https://doi.org/10.3389/fphar.2021.639628",
     metric: "10.3389/fphar.2021.639628",
+    plum: "https://plu.mx/plum/a/?doi=10.3389/fphar.2021.639628",
     if: "JCR IF: 5.810",
   },
   {
@@ -194,6 +222,7 @@ const publications = [
     date: "28 December 2020",
     doi: "https://doi.org/10.3390/antiox10010023",
     metric: "10.3390/antiox10010023",
+    plum: "https://plu.mx/plum/a/?doi=10.3390/antiox10010023",
     if: "JCR IF: 6.313",
   },
   {
@@ -207,6 +236,7 @@ const publications = [
     date: "24 December 2020",
     doi: "https://doi.org/10.3390/biomedicines9010005",
     metric: "10.3390/biomedicines9010005",
+    plum: "https://plu.mx/plum/a/?doi=10.3390/biomedicines9010005",
     if: "JCR IF: 6.313",
   },
   {
@@ -220,6 +250,7 @@ const publications = [
     date: "14 December 2020",
     doi: "https://doi.org/10.5455/jabet.2021.d109",
     metric: "10.5455/jabet.2021.d109",
+    plum: "https://plu.mx/plum/a/?doi=10.5455/jabet.2021.d109",
     if: "[Scopus Indexed]",
   },
   {
@@ -233,6 +264,7 @@ const publications = [
     date: "19 November 2020",
     doi: "https://doi.org/10.3390/biomedicines8110517",
     metric: "10.3390/biomedicines8110517",
+    plum: "https://plu.mx/plum/a/?doi=10.3390/biomedicines8110517",
     if: "JCR IF: 6.081",
   },
   {
@@ -246,6 +278,7 @@ const publications = [
     date: "07 Oct 2020",
     doi: "https://doi.org/10.29333/jcei/8564",
     metric: "10.29333/jcei/8564",
+    plum: "https://plu.mx/plum/a/?doi=10.29333/jcei/8564",
     if: "[DOAJ Indexed]",
   },
   {
@@ -259,6 +292,7 @@ const publications = [
     date: "13 Aug 2020",
     doi: "https://doi.org/10.1080/10799893.2020.1805628",
     metric: "10.1080/10799893.2020.1805628",
+    plum: "https://plu.mx/plum/a/?doi=10.1080/10799893.2020.1805628",
     if: "JCR IF: 2.092",
   },
   {
@@ -271,7 +305,8 @@ const publications = [
     issue: "pp.1–21",
     date: "7 Aug 2020",
     doi: "https://doi.org/10.1080/07391102.2020.1803969",
-    metric: "110.1080/07391102.2020.1803969",
+    metric: "10.1080/07391102.2020.1803969",
+    plum: "https://plu.mx/plum/a/?doi=10.1080/07391102.2020.1803969",
     if: "JCR IF: 3.549",
   },
   {
@@ -285,6 +320,7 @@ const publications = [
     date: "19 July 2020",
     doi: "https://doi.org/10.5455/jabet.2020.d153",
     metric: "10.5455/jabet.2020.d153",
+    plum: "https://plu.mx/plum/a/?doi=10.5455/jabet.2020.d153",
     if: "[Scopus Indexed]",
   },
   {
@@ -298,6 +334,7 @@ const publications = [
     date: "30 Mar 2020",
     doi: "https://doi.org/10.1080/10799893.2020.1742741",
     metric: "10.1080/10799893.2020.1742741",
+    plum: "https://plu.mx/plum/a/?doi=10.1080/10799893.2020.1742741",
     if: "JCR IF: 2.092",
   },
 ];

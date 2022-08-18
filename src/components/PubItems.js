@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
+import useScript from "../containers/useScript";
 
 const PubItemsStyles = styled.div`
   background-color: #282829;
@@ -8,6 +10,8 @@ const PubItemsStyles = styled.div`
   &:hover {
     background-color: var(--gray-2);
   }
+  display: grid;
+  align-self: start;
 
   .pubItems_info {
     h3 {
@@ -115,7 +119,10 @@ export default function PubItems({
   doi = "this is link",
   impact = "0.00",
   metric = "this is 000",
+  plum = "https://plu.mx/plum/a/?doi=10.1371/journal.pone.0056506",
 }) {
+  useScript("https://badge.dimensions.ai/badge.js");
+  useScript("//cdn.plu.mx/widget-popup.js");
   return (
     <PubItemsStyles>
       <div className="pubItems_info">
@@ -143,6 +150,16 @@ export default function PubItems({
               </a>
             }
           </div>
+
+          <span>
+            <a
+              href={plum}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="plumx-plum-print-popup plum-bigben-theme"
+              data-size="medium"
+            ></a>
+          </span>
 
           <span
             className="__dimensions_badge_embed__"

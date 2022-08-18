@@ -1,7 +1,7 @@
 import React from "react";
 import ExpItems from "./OrganizingExpItems";
 import styled from "styled-components";
-import profexps from "../assets/data/profexp";
+import profexps from "../assets/data/experience";
 
 const ProfExpSectionStyle = styled.div`
   .expsecItems {

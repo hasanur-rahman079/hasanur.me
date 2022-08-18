@@ -82,7 +82,6 @@ const NavMenuStyles = styled.div`
 
     .logo {
       padding: 8px 6px;
-
     }
 
     /* Step:3 Use the class that defined in the function */
@@ -197,7 +196,6 @@ export default function NavMenu() {
           </NavLink>
         </li>
 
-        
         {/* <li>
           <NavLink
             to="/works"
