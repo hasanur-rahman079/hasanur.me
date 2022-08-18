@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import UseScript from "../containers/UseScript";
+import UseScript from "../components/UseScript";
 
 const PubItemsStyles = styled.div`
   display: grid;
