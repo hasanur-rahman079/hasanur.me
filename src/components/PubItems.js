@@ -118,7 +118,7 @@ export default function PubItems({
   doi = "this is link",
   impact = "0.00",
   metric = "this is 000",
-  plum = "https://plu.mx/plum/a/?doi=10.1371/journal.pone.0056506",
+  plum = "",
 }) {
   UseScript("https://badge.dimensions.ai/badge.js");
   UseScript("//cdn.plu.mx/widget-popup.js");
