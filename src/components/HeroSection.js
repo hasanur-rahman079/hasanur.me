@@ -116,7 +116,7 @@ export default function HeroSection() {
                 cancer informatics, and molecular drug designing and
                 development. Currently studying MSc in Department of Cancer
                 Preventive Material Development, majoring in Biomedical Science
-                and Technology, Graduate School, Kung Hee University, Seoul
+                and Technology of Graduate School at Kung Hee University, Seoul
                 Campus.
               </Ptext>
 
