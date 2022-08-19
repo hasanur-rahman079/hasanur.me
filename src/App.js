@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavMenu from "./components/NavMenu";
 import ScrollToTop from "./components/ScrollToTop";
-import UseScript from "./containers/UseScript";
+import UseScript from "./components/UseScript";
 import { About } from "./pages/About";
 import { Awards } from "./pages/Awards";
 import { Experiences } from "./pages/Experiences";
