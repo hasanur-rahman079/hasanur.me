@@ -157,6 +157,7 @@ export default function PubItems({
               rel="noopener noreferrer"
               className="plumx-plum-print-popup plum-bigben-theme"
               data-size="medium"
+              data-popup="bottom"
             >
               plumx
             </a>
