@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./styles/custom.scss";
 import NavMenu from "./components/NavMenu";
 import ScrollToTop from "./components/ScrollToTop";
-import UseScript from "./components/UseScript";
 import { About } from "./pages/About";
 import { Awards } from "./pages/Awards";
 import { Experiences } from "./pages/Experiences";
@@ -16,7 +16,6 @@ function App() {
     <>
       <Router>
         <ScrollToTop />
-        <UseScript />
         <NavMenu />
         <Routes>
           <Route path="/" element={<Home />} />

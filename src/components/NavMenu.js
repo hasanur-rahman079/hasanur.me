@@ -241,7 +241,7 @@ export default function NavMenu() {
             Skills
           </NavLink>
         </li> */}
-        {/* <li>
+        <li>
           <NavLink
             to="/about"
             onClick={() => SetShowNav(!showNav)}
@@ -251,7 +251,7 @@ export default function NavMenu() {
           >
             About
           </NavLink>
-        </li> */}
+        </li>
       </ul>
     </NavMenuStyles>
   );

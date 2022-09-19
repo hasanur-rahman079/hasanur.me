@@ -112,12 +112,10 @@ export default function HeroSection() {
 
             <div className="hero_info">
               <Ptext>
-                A biotechnology and genetic engineering graduate interested in
-                cancer informatics, and molecular drug designing and
-                development. Currently studying MSc in Department of Cancer
-                Preventive Material Development, majoring in Biomedical Science
-                and Technology of Graduate School at Kung Hee University, Seoul
-                Campus.
+                A fresh biotechnology and genetic engineering graduate
+                interested in cancer informatics, and molecular drug designing
+                and development. Currently preparing for MSc/PhD studies in
+                abroad.
               </Ptext>
 
               <div className="downloadbtn">

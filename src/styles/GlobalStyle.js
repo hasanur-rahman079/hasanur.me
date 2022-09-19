@@ -21,8 +21,6 @@ const GlobalStyles = createGlobalStyle`
   html{
     font-size: 10px;
     font-family: 'Inter', sans-serif;
-    background-color: var(--dark-light-bg);
-    color: var(--gray-text);
   }
 
   h1, h2, h3, h4, h5{
