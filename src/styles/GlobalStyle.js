@@ -6,66 +6,49 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
   }
-  :root{
-    --dark-bg: #1c1e24;
-    --dark-light-bg: #282c34;
-    --deep-dark: #1E1E1E;
-    --gray-1: #BCB4B4;
-    --gray-2: #363636;
-    --gray-text:#d0d5df;
-    --white : #eeeeee;
-    --black: black;
-    --carmine-pink: #e76161;
-    --butterscotch: #fdb54a;
-  }
-  html{
+
+  html, 
+  body{
+    position: relative;
     font-size: 10px;
     font-family: 'Inter', sans-serif;
   }
 
   h1, h2, h3, h4, h5{
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
   }
 
   ul,li{
     list-style: none;
   }
+
   a{
     text-decoration: none;
   }
-  img, svg{
+
+  img{
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+
   button{
     outline: none
   }
+
   .container {
+    position: relative;
     max-width: 1200px;
-    width: 90%;
+    min-width: 95%;
     margin: 0 auto;
+    padding: 0;
   }
 
   ::selection {
     color: black;
-    background: var(--butterscotch);
+    background:  #fdb54a;
   }
 
-/* Smooth Scroll  */
-  [data-scrollbar] {
-    height: 100vh;
-    overflow: hidden;
-    background-color: var(--gray-1);
-    .scroll-content {
-      background-color: var(--dark-bg);
-    }
-    .scrollbar-track.scrollbar-track-y {
-      background: var(--deep-dark);
-      .scrollbar-thumb-y {
-        background: var(--gray-1);
-      }
-    }
-  }
 `;
 export default GlobalStyles;

@@ -10,66 +10,68 @@ const PubItemsStyles = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2em;
-    align-self: start;
+    /* align-self: start; */
 
-    .pubContainer {
-      display: grid;
-      margin: 1rem 0;
-      background-color: #282829;
-      padding: 1.2em;
-      border-radius: 0.5rem;
-      align-self: start;
-
-      &:hover {
-        background-color: var(--gray-2);
-      }
-
-      .typeTag {
-        font-size: 14px;
-        margin-bottom: 14px;
-      }
-
-      .pubtitle {
-        font-family: "Helvetica Neue", sans-serif;
-        font-size: 2.3rem;
-        font-weight: 700;
-        color: var(--gray-text);
+    .allPub {
+      .pubContainer {
+        display: grid;
+        margin: 1rem 0;
+        background-color: #282829;
+        padding: 1.2em;
+        border-radius: 0.5rem;
+        /* align-self: start; */
 
         &:hover {
-          color: var(--white);
+          background-color: ${(props) => props.theme.color.gray_2};
         }
-      }
 
-      .jName {
-        font-size: 1.6rem;
-        font-weight: 500;
-        font-style: italic;
-        margin-top: 8px;
-        margin-right: 10px !important;
-      }
+        .typeTag {
+          font-size: 14px;
+          margin-bottom: 14px;
+        }
 
-      .date {
-        font-size: 1.6rem;
-        margin: 8px 0;
-      }
-
-      .metrics {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 30px;
-
-        .doi {
-          font-size: 1.6rem;
-          font-weight: 500;
-          text-decoration: underline;
-          text-decoration-color: var(--butterscotch);
-          text-decoration-thickness: 3px;
-          margin-top: 8px;
-          color: var(--gray-text);
+        .pubtitle {
+          font-family: "Helvetica Neue", sans-serif;
+          font-size: 2.3rem;
+          font-weight: 700;
+          color: ${(props) => props.theme.color.gray_text};
 
           &:hover {
-            color: var(--white);
+            color: ${(props) => props.theme.color.white};
+          }
+        }
+
+        .jName {
+          font-size: 1.6rem;
+          font-weight: 500;
+          font-style: italic;
+          margin-top: 8px;
+          margin-right: 10px !important;
+        }
+
+        .date {
+          font-size: 1.6rem;
+          margin: 8px 0;
+        }
+
+        .metrics {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 30px;
+
+          .doi {
+            font-size: 1.6rem;
+            font-weight: 500;
+            text-decoration: underline;
+            text-decoration-color: ${(props) => props.theme.color.butterscotch};
+            text-decoration-thickness: 3px;
+            margin-top: 8px;
+            color: ${(props) => props.theme.color.gray_text};
+
+            &:hover {
+              color: ${(props) => props.theme.color.white};
+            }
           }
         }
       }
@@ -109,7 +111,7 @@ const PubItemsStyles = styled.div`
   }
 `;
 
-export default function PubItems({ authors = "this is the author list" }) {
+export default function PubItems() {
   const [work, setwork] = useState([]);
   const [isError, setIsError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -148,7 +150,7 @@ export default function PubItems({ authors = "this is the author list" }) {
             // console.log(pub);
 
             return (
-              <div key={index}>
+              <div className="allPub" key={index}>
                 {isError !== "" && <h2>{isError}</h2>}
 
                 <div className="pubContainer">

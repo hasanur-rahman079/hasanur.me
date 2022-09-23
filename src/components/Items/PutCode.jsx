@@ -53,10 +53,10 @@ function Putcode({ putCodePath }) {
 
                     return (
                       <div key={index} className="d-flex flex-wrap flex-row">
-                        <span className="authors m-1">
-                          {index ? ", " : ""}
+                        <div className="authors m-1">
                           {nameList.value}
-                        </span>
+                          {index ? ", " : " "}
+                        </div>
                       </div>
                     );
                   })}
