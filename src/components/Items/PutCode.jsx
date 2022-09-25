@@ -3,13 +3,18 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
 const PutcodeStyle = styled.div`
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 
   .authors {
-    font-size: 1.6rem;
-    line-height: 2.2rem;
-    font-weight: 400;
-    margin: 14px 0;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 0.7rem;
+
+    .authorsList {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      font-weight: 400;
+    }
   }
 
   @media only screen and (max-width: 768px) {
@@ -45,15 +50,15 @@ function Putcode({ putCodePath }) {
             const name = list.contributor;
 
             return (
-              <div className="d-flex flex-wrap" key={index}>
+              <div className="authors" key={index}>
                 {name &&
                   name.map((names, index) => {
                     const nameList = names["credit-name"];
                     //   console.log(nameList.value);
 
                     return (
-                      <div key={index} className="d-flex flex-wrap flex-row">
-                        <div className="authors m-1">
+                      <div key={index}>
+                        <div className="authorsList">
                           {nameList.value}
                           {index ? ", " : " "}
                         </div>

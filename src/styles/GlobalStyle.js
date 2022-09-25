@@ -1,17 +1,17 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
   }
 
   html, 
   body{
-    position: relative;
     font-size: 10px;
-    font-family: 'Inter', sans-serif;
   }
 
   h1, h2, h3, h4, h5{
@@ -37,13 +37,12 @@ const GlobalStyles = createGlobalStyle`
     outline: none
   }
 
-  .container {
-    position: relative;
-    max-width: 1200px;
-    min-width: 95%;
-    margin: 0 auto;
-    padding: 0;
+  .pageContainer{
+    margin-top: calc(40px + 40px);
+    padding: 0 2rem;
+    margin-bottom: 40px;
   }
+
 
   ::selection {
     color: black;

@@ -1,24 +1,28 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./styles/custom.scss";
 import styled, { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./styles/theme.config";
 import NavMenu from "./components/NavMenu";
-import ScrollToTop from "./components/ScrollToTop";
-import { About } from "./pages/About";
-import { Awards } from "./pages/Awards";
-import { Experiences } from "./pages/Experiences";
 import Home from "./pages/Home";
+import About from "./pages/About";
 import Academics from "./pages/Academics";
-import { Publications } from "./pages/Publications";
-import { Skills } from "./pages/Skills";
-import { Works } from "./pages/Works";
+import Research from "./pages/Research";
+import { ProfAct } from "./pages/ProfActivities";
+import Gallary from "./pages/Gallary";
+import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
 
 const AppStyles = styled.div`
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background-color: ${(props) => props.theme.body};
   color: #d0d5df;
   transition: all 0.25s ease;
+
+  .contentWrap {
+    flex: 1;
+  }
 `;
 
 function App() {
@@ -34,18 +38,19 @@ function App() {
       <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
         <AppStyles>
           <Router>
-            <ScrollToTop />
             <NavMenu toggleTheme={toggleTheme} />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/academics" element={<Academics />} />
-              <Route path="/publications" element={<Publications />} />
-              <Route path="/works" element={<Works />} />
-              <Route path="/experiences" element={<Experiences />} />
-              <Route path="/awards" element={<Awards />} />
-              <Route path="/skills" element={<Skills />} />
-              <Route path="/about" element={<About />} />
-            </Routes>
+            <div class="contentWrap">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/academics" element={<Academics />} />
+                <Route path="/research" element={<Research />} />
+                <Route path="/experiences" element={<ProfAct />} />
+                <Route path="/gallary" element={<Gallary />} />
+                <Route path="/follow" element={<Contact />} />
+              </Routes>
+            </div>
+            <Footer />
           </Router>
         </AppStyles>
       </ThemeProvider>

@@ -1,41 +1,54 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Subtitle = styled.div`
-  text-align: center;
+  margin: 17px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-  h2 {
-    font-family: "Inter", sans-serif;
-    color: var(--butterscotch);
-    font-size: 4rem;
-    text-transform: uppercase;
+  .title {
+    h2 {
+      font-family: "Inter", sans-serif;
+      color: ${(props) => props.theme.color.butterscotch};
+      font-size: 34px;
+      text-transform: capitalize;
+    }
   }
 
-  p {
-    font-size: 1.9rem;
-    margin-top: 0.5rem;
+  .btn {
+    background-color: ${(props) => props.theme.color.btn_bg};
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+
+    a {
+      color: ${(props) => props.theme.color.link_text};
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   @media only screen and (max-width: 768px) {
     h2 {
       font-size: 3.2rem;
     }
-
-    p {
-      font-size: 1.2rem;
-    }
   }
 `;
 
 export default function SectionTitle({
   title = "This is title",
-  subTitle = "This is subtitle",
+  btnText = "Button",
+  link = "/",
 }) {
   return (
     <Subtitle>
-      <div className="container">
+      <div className="title">
         <h2>{title}</h2>
-        <p>{subTitle}</p>
+      </div>
+      <div className="btn">
+        <Link to={link}>{btnText}</Link>
       </div>
     </Subtitle>
   );
