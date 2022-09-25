@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import ProfActsCard from "../components/cards/ProfActsCard";
 import COB from "../assets/images/Blank_image.png";
-import PageTitle from "../components/items/PageTitle";
+import PageTitle from "../components/typo/PageTitle";
 
 const ExperiencesStyles = styled.div`
   .cards {
@@ -30,6 +30,7 @@ export const ProfAct = () => {
             Img={COB}
           />
         </div>
+
         <div>
           <ProfActsCard
             name="Community of Biotechnlogy"
@@ -41,6 +42,7 @@ export const ProfAct = () => {
             Img={COB}
           />
         </div>
+
         <div>
           <ProfActsCard
             name="Community of Biotechnlogy"
