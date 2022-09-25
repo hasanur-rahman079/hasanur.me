@@ -16,7 +16,10 @@ const ExperiencesStyles = styled.div`
 export const ProfAct = () => {
   return (
     <ExperiencesStyles className="pageContainer">
-      <PageTitle pageTitle="Professional Activities" />
+      <div>
+        <PageTitle pageTitle="Professional Activities" />
+      </div>
+
       <div className="cards">
         <div>
           <ProfActsCard
