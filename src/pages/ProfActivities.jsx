@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import ProfActsCard from "../components/cards/ProfActsCard";
 import COB from "../assets/images/Blank_image.png";
-// import PageTitle from "../components/items/PageTitle";
+import PageTitle from "../components/items/PageTitle";
 
 const ExperiencesStyles = styled.div`
   .cards {
@@ -16,9 +16,7 @@ const ExperiencesStyles = styled.div`
 export const ProfAct = () => {
   return (
     <ExperiencesStyles className="pageContainer">
-      <div>
-        {/* <PageTitle pageTitle="Professional Activities" /> */}
-      </div>
+      <PageTitle pageTitle="Professional Activities" />
 
       <div className="cards">
         <div>

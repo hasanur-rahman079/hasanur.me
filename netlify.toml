@@ -1,3 +1,7 @@
+[build]
+  functions = "functions"
+  command = "echo"
+
 [[redirects]]
   from = "/*"
   to = "/"
