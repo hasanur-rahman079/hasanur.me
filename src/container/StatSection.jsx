@@ -3,10 +3,19 @@ import styled from "styled-components";
 import { StatCard } from "../components";
 
 const StatSectionStyle = styled.div`
-  margin: 80px 2rem;
+  margin: 50px 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 33px;
+  max-width: 100%;
+
+  @media only screen and (max-width: 768px) {
+    margin: 40px 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    grid-gap: 2rem;
+  }
 `;
 
 function StatSection() {

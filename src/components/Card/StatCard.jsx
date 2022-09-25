@@ -12,20 +12,21 @@ const StatStyle = styled.div`
     justify-content: center;
     align-items: center;
     padding: 15px 27px;
+    text-align: center;
 
     .number {
       h3 {
-        font-size: 55px;
+        font-size: 50px;
         font-weight: 900;
         color: ${(props) => props.theme.color.butterscotch};
       }
     }
 
     .text {
-      margin-top: 10px;
+      margin-top: 6px;
 
       p {
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 500;
         line-height: 32px;
         color: ${(props) => props.theme.color.headline_text};
@@ -33,13 +34,38 @@ const StatStyle = styled.div`
     }
 
     .info {
-      margin-top: 20px;
+      margin-top: 15px;
       font-size: 14px;
       font-weight: 400;
       color: ${(props) => props.theme.color.link_text};
 
       a {
         color: ${(props) => props.theme.color.link_text};
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .cardCon {
+      padding: 10px 20px;
+
+      .number {
+        h3 {
+          font-size: 42px;
+        }
+      }
+
+      .text {
+        margin-top: 2px;
+
+        p {
+          font-size: 18px;
+        }
+      }
+
+      .info {
+        margin-top: 8px;
+        font-size: 11px;
       }
     }
   }

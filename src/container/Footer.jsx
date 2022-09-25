@@ -66,6 +66,14 @@ const FooterSectionStyles = styled.div`
 
   @media only screen and (max-width: 768px) {
     padding: 2.5rem 1.5rem 1.3rem;
+
+    .bottom {
+      a {
+        span {
+          display: none;
+        }
+      }
+    }
   }
 `;
 
@@ -84,24 +92,21 @@ export default function Footer() {
         <div className="bottom">
           <div className="git">
             <a href="http://" target="_blank" rel="noopener noreferrer">
-              {" "}
-              Github
+              <span>Github</span>
               <img src={GH} alt="Github" />
             </a>
           </div>
 
           <div className="scholar">
             <a href="http://" target="_blank" rel="noopener noreferrer">
-              {" "}
-              Google Scholar
+              <span>Google Scholar</span>
               <img src={GSIcon} alt="Google Scholar Icon" />
             </a>
           </div>
 
           <div className="gate">
             <a href="http://" target="_blank" rel="noopener noreferrer">
-              {" "}
-              ResearchGate
+              <span>ResearchGate</span>
               <img src={RG} alt="researchGate Icon" />
             </a>
           </div>
