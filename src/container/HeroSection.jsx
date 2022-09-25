@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import HeroImg from "../../assets/images/hero-img-new.png";
-import Ptext from "../Ptext";
+import { Ptext } from "../components";
+import { images } from "../constants";
 
 const HeroStyle = styled.div`
   .hero {
@@ -109,7 +109,7 @@ export default function HeroSection() {
           </div>
 
           <div className="hero_img">
-            <img src={HeroImg} alt="Hasanur Rahman" />
+            <img src={images.heroImgNew} alt="Hasanur Rahman" />
           </div>
         </div>
       </div>

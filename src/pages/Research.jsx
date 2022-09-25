@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
-import SectionTitle from "../components/SectionTitle";
+import { PubSection } from "../container";
 import styled from "styled-components";
 import { MdSearch } from "react-icons/md";
-import PubSection from "../components/sections/PubSection";
-import PubInfo from "../assets/data/publications";
-import publications from "../assets/data/publications";
+import statData from "../constants";
 
 const PublicationsStyles = styled.div`
   .container {
@@ -57,34 +55,34 @@ const PublicationsStyles = styled.div`
   }
 `;
 
-export default function Research () {
+export default function Research() {
   // capture the search text that we'll search in the input box
-  const [searchText, setSearchText] = useState("");
+  // const [searchText, setSearchText] = useState("");
 
   // calling all the data from stat data by using useState (hook) N.B. Dont forget to import the hook here
-  const [pubData, setPubdata] = useState(PubInfo);
+  // const [pubData, setPubdata] = useState(PubInfo);
 
   // Using UseEffect funciton for filter the search data
-  useEffect(() => {
-    if (searchText === "") return;
-    setPubdata(() =>
-      PubInfo.filter((publication) =>
-        publication.title.toLowerCase().match(searchText.toLowerCase())
-      )
-    );
-  }, [searchText]);
+  // useEffect(() => {
+  //   if (searchText === "") return;
+  //   setPubdata(() =>
+  //     PubInfo.filter((publication) =>
+  //       publication.title.toLowerCase().match(searchText.toLowerCase())
+  //     )
+  //   );
+  // }, [searchText]);
 
   // creating the function that we assigned handleChange for the onChange object.
   // preventDefault will prevent the default behaviour of the search box
   // setSearchText state will show the typed search text in the box
-  function handleChange(e) {
-    e.preventDefault();
-    setSearchText(e.target.value);
-    // set the default value if the search item is 0
-    if (!e.target.value.length > 0) {
-      setPubdata(PubInfo);
-    }
-  }
+  // function handleChange(e) {
+  //   e.preventDefault();
+  //   setSearchText(e.target.value);
+  // set the default value if the search item is 0
+  //   if (!e.target.value.length > 0) {
+  //     setPubdata(PubInfo);
+  //   }
+  // }
 
   return (
     <PublicationsStyles className="pageContainer">
@@ -110,10 +108,10 @@ export default function Research () {
           </form>
         </div> */}
 
-        <div className="allpub">
-          <PubSection />
-        </div>
+      <div className="allpub">
+        <PubSection />
+      </div>
       {/* </div> */}
     </PublicationsStyles>
   );
-};
+}

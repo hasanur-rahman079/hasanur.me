@@ -1,8 +1,5 @@
 import React from "react";
-import HeroSection from "../components/sections/HeroSection";
-import StatSection from "../components/sections/StatSection";
-import PubSection from "../components/sections/PubSection";
-import Footer from "../components/Footer";
+import { HeroSection, StatSection, PubSection } from "../container";
 
 export default function Home() {
   return (
@@ -10,7 +7,6 @@ export default function Home() {
       <HeroSection />
       <StatSection />
       {/* <PubSection /> */}
-      {/* <Footer /> */}
     </div>
   );
 }

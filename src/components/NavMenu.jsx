@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { MdMenu, MdClose } from "react-icons/md";
-import SunIcon from "./icons/SunIcon";
-import Switch from "./Switch";
-import MoonIcon from "./icons/MoonIcon";
+import { SunIcon, Switch, MoonIcon } from "../components";
 
 const NavMenuStyles = styled.div`
   height: 40px;

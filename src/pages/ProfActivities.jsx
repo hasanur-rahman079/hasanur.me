@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import ProfActsCard from "../components/cards/ProfActsCard";
-import COB from "../assets/images/Blank_image.png";
-import PageTitle from "../components/typo/PageTitle";
+import { ProfActsCard, PageTitle } from "../components";
+import { images } from "../constants";
 
 const ExperiencesStyles = styled.div`
   .cards {
@@ -13,7 +12,7 @@ const ExperiencesStyles = styled.div`
   }
 `;
 
-export const ProfAct = () => {
+export default function ProfAct() {
   return (
     <ExperiencesStyles className="pageContainer">
       <PageTitle pageTitle="Professional Activities" />
@@ -27,7 +26,7 @@ export const ProfAct = () => {
             duties="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat
               tellus quam praesent ut pulvinar. Elementum commodo ac faucibus
               consectetur nulla nulla non. Cras sollicitudin eu at non fusce."
-            Img={COB}
+            Img={images.demo}
           />
         </div>
 
@@ -39,7 +38,7 @@ export const ProfAct = () => {
             duties="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat
               tellus quam praesent ut pulvinar. Elementum commodo ac faucibus
               consectetur nulla nulla non. Cras sollicitudin eu at non fusce."
-            Img={COB}
+            Img={images.demo}
           />
         </div>
 
@@ -51,10 +50,10 @@ export const ProfAct = () => {
             duties="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat
               tellus quam praesent ut pulvinar. Elementum commodo ac faucibus
               consectetur nulla nulla non. Cras sollicitudin eu at non fusce."
-            Img={COB}
+            Img={images.demo}
           />
         </div>
       </div>
     </ExperiencesStyles>
   );
-};
+}

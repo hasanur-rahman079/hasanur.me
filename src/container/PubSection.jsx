@@ -1,7 +1,5 @@
 import React from "react";
-import UseScript from "../UseScript";
-import SectionTitle from "../SectionTitle";
-import PubCard from "../cards/PubCard";
+import { PubCard, SectionTitle, UseScript } from "../components";
 import styled from "styled-components";
 
 const PubSectionStyles = styled.div`

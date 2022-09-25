@@ -1,12 +1,14 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import Loading from "../Spinner";
-import Putcode from "../items/PutCode";
-import Doi from "../icons/Doi";
-import Pulmx from "../icons/Pulmx";
-import DiBadge from "../icons/DiBadge";
-import Altmetric from "../icons/Altmetric";
+import {
+  Putcode,
+  Doi,
+  Pulmx,
+  DiBadge,
+  Altmetric,
+  Loading,
+} from "../../components";
 
 const PubItemsStyles = styled.div`
   .pubItems_info {
@@ -112,7 +114,7 @@ const PubItemsStyles = styled.div`
   }
 `;
 
-export default function PubICard() {
+export default function PubCard() {
   const [work, setwork] = useState([]);
   const [isError, setIsError] = useState("");
   const [loading, setLoading] = useState(false);

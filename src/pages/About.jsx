@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import PageGridCol from "../components/sections/PageGridCol";
-import Hasan from "../assets/images/about_me.png";
+import { PageGridCol } from "../container";
+import { images } from "../constants";
 
 const AboutPageStyle = styled.div`
   display: flex;
@@ -16,7 +16,7 @@ export default function About() {
         <PageGridCol
           title="About me"
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio mi, commodo egestas sit velit. Id purus purus adipiscing aliquet justo interdum erat in. In velit nullam ac massa eu consequat luctus. Porttitor egestas nisl in nascetur odio ante id pharetra non. Pellentesque lacus leo, scelerisque interdum nam sit. Amet arcu, pellentesque sagittis vivamus commodo."
-          Img={Hasan}
+          Img={images.aboutImg}
         />
       </div>
 

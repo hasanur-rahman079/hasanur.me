@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import StatCard from "../cards/StatCard";
+import { StatCard } from "../components";
 
 const StatSectionStyle = styled.div`
   margin: 80px 2rem;

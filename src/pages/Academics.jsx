@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import AcRecordCard from "../components/cards/AcaRecordCard";
-import BSMRSTU from "../assets/images/bsmrstu.png";
-import CCJ from "../assets/images/ccj.png";
+import { AcRecordCard } from "../components";
+import { images, pdfs } from "../constants";
+
 import { FaFileDownload } from "react-icons/fa";
 
 const AcademicPageStyle = styled.div`
@@ -71,11 +71,7 @@ function Academics() {
         <h2>Academic Backgrounds</h2>
 
         <div className="cv">
-          <a
-            href={require("../assets/pdf/Hasan_CV_updated July.pdf")}
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href={pdfs.cv} target="_blank" rel="noreferrer">
             Download CV <FaFileDownload />
           </a>
         </div>
@@ -92,7 +88,7 @@ function Academics() {
             session="2016-17"
             graduated="Feb, 2022"
             info="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus leo in adipiscing turpis enim turpis. Massa condimentum elit faucibus netus arcu curabitur sit elementum. Enim amet donec eget amet, habitant faucibus tortor mi. Bibendum sed facilisis turpis gravida augue facilisis nibh quis etiam. Fusce mattis ornare placerat rhoncus amet nunc lectus. Vehicula id neque enim"
-            Img={BSMRSTU}
+            Img={images.bsmrstu}
           />
         </div>
 
@@ -104,7 +100,7 @@ function Academics() {
             session="2015-16"
             graduated="Aug, 2015"
             info="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus leo in adipiscing turpis enim turpis. Massa condimentum elit faucibus netus arcu curabitur sit elementum. Enim amet donec eget amet, habitant faucibus tortor mi. Bibendum sed facilisis turpis gravida augue facilisis nibh quis etiam. Fusce mattis ornare placerat rhoncus amet nunc lectus. Vehicula id neque enim"
-            Img={CCJ}
+            Img={images.ccj}
           />
         </div>
       </div>

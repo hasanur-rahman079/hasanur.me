@@ -2,15 +2,18 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import styled, { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./styles/theme.config";
-import NavMenu from "./components/NavMenu";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Academics from "./pages/Academics";
-import Research from "./pages/Research";
-import { ProfAct } from "./pages/ProfActivities";
-import Gallary from "./pages/Gallary";
-import Contact from "./pages/Contact";
-import Footer from "./components/Footer";
+
+import { NavMenu } from "./components";
+import {
+  Home,
+  About,
+  Academics,
+  Research,
+  ProfAct,
+  Gallary,
+  Contact,
+} from "./pages";
+import { Footer } from "./container";
 
 const AppStyles = styled.div`
   display: flex;
