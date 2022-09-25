@@ -3,7 +3,7 @@ import { HeroSection, StatSection, PubSection } from "../container";
 
 export default function Home() {
   return (
-    <div>
+    <div className="pageContainer">
       <HeroSection />
       <StatSection />
       {/* <PubSection /> */}

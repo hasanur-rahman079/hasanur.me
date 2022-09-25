@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { MdMenu, MdClose } from "react-icons/md";
+import { MdClose } from "react-icons/md";
 import { SunIcon, Switch, MoonIcon } from "../components";
+import { FaStream } from "react-icons/fa";
 
 const NavMenuStyles = styled.div`
   height: 40px;
@@ -77,12 +78,9 @@ const NavMenuStyles = styled.div`
   .mobileMenuIcon {
     position: absolute;
     right: 0;
-    top: 1rem;
     cursor: pointer;
     display: none;
     outline: none;
-    padding: 2px 0;
-    margin: auto 0;
     border-radius: 5px;
     color: ${(props) => props.theme.color.nav_menu};
     text-align: right;
@@ -92,20 +90,33 @@ const NavMenuStyles = styled.div`
     }
 
     .text {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
+      font-weight: 600;
       line-height: 0;
     }
 
     .menuIcon {
-      width: 2.2rem;
       color: ${(props) => props.theme.color.nav_menu};
-      font-size: 16px;
       font-weight: 600;
-      line-height: 14px;
+
+      svg {
+        font-size: 17px;
+        margin-left: 5px;
+      }
     }
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1261px) {
+    .navItems {
+      li {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 998px) {
     display: grid;
     grid-template-columns: 1fr 0.5fr 0.5fr;
     padding: 0.2rem 10px;
@@ -158,7 +169,7 @@ const NavMenuStyles = styled.div`
         margin: 0 0 0 auto;
         cursor: pointer;
         color: ${(props) => props.theme.color.nav_menu};
-        font-size: 18px;
+        font-size: 2.5rem;
         font-weight: 600;
 
         * {
@@ -168,8 +179,20 @@ const NavMenuStyles = styled.div`
 
       li {
         display: block;
-        margin-bottom: 1.8rem;
+        margin-bottom: 2rem;
         text-align: center;
+
+        a {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 377px) {
+    .logo {
+      a {
+        font-size: 1.5rem;
       }
     }
   }
@@ -194,7 +217,7 @@ export default function NavMenu({ toggleTheme }) {
       >
         <span className="text">Menu</span>
         <span className="menuIcon">
-          <MdMenu />
+          <FaStream />
         </span>
       </div>
 

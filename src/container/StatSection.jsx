@@ -3,14 +3,14 @@ import styled from "styled-components";
 import { StatCard } from "../components";
 
 const StatSectionStyle = styled.div`
-  margin: 50px 2rem;
+  margin: 50px auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 33px;
   max-width: 100%;
 
-  @media only screen and (max-width: 768px) {
-    margin: 40px 2rem;
+  @media only screen and (max-width: 998px) {
+    margin: 40px auto;
     display: grid;
     grid-template-columns: 1fr;
     max-width: 100%;

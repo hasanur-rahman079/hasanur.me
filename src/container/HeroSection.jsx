@@ -5,16 +5,13 @@ import { images } from "../constants";
 
 const HeroStyle = styled.div`
   .hero {
-    min-height: calc(100vh - 100px);
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     grid-gap: 50px;
-    gap: 50px;
     align-items: center;
     justify-content: space-around;
     margin: 30px auto;
-    padding: 30px 0;
 
     .left_items {
       display: flex;
@@ -27,10 +24,12 @@ const HeroStyle = styled.div`
         display: flex;
         flex-direction: column;
         font-size: 4.5rem;
+        font-weight: 600;
         font-family: "Helvetica Neue", sans-serif;
         color: ${(props) => props.theme.color.card_text};
 
         .name {
+          font-weight: 800;
           color: ${(props) => props.theme.color.butterscotch};
         }
       }
@@ -55,11 +54,11 @@ const HeroStyle = styled.div`
 
   @media only screen and (max-width: 768px) {
     .hero {
-      padding: 40px 20px;
       justify-content: flex-start;
+      grid-gap: 0;
 
       .hero_info {
-        text-align: center;
+        text-align: justify;
       }
 
       .left_items {

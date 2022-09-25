@@ -16,7 +16,7 @@ const SwitchStyle = styled.div`
     .switch {
       position: absolute;
       cursor: pointer;
-      background-color: #b6b6b6;
+      background-color: #DDCEC8;
       border-radius: 25px;
       top: 0;
       right: 0;
@@ -31,7 +31,7 @@ const SwitchStyle = styled.div`
         top: 2px;
         width: 18px;
         height: 18px;
-        background-color: #333;
+        background-color: #B03503;
         border-radius: 50%;
         transition: transform 0.3s ease;
       }
@@ -39,11 +39,11 @@ const SwitchStyle = styled.div`
 
     input[type="checkbox"]:checked + .switch::before {
       transform: translateX(23px);
-      background-color: #333;
+      background-color: #B03503;
     }
 
     input[type="checkbox"]:checked + .switch {
-      background-color: #2bc6ff;
+      background-color: #d0d5df;
     }
   }
 `;
