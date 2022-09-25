@@ -7,7 +7,6 @@ import PubInfo from "../assets/data/publications";
 import publications from "../assets/data/publications";
 
 const PublicationsStyles = styled.div`
-  padding: 10rem 0;
   .container {
     .pubNumber {
       text-align: center;
@@ -88,8 +87,8 @@ export default function Research () {
   }
 
   return (
-    <PublicationsStyles>
-      <div className="container">
+    <PublicationsStyles className="pageContainer">
+      {/* <div className="container">
         <SectionTitle
           title="Publications"
           subTitle="Find my recent publications here"
@@ -109,12 +108,12 @@ export default function Research () {
             />
             <MdSearch className="searchIcon"></MdSearch>
           </form>
-        </div>
+        </div> */}
 
         <div className="allpub">
           <PubSection />
         </div>
-      </div>
+      {/* </div> */}
     </PublicationsStyles>
   );
 };

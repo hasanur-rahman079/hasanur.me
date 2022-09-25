@@ -16,10 +16,10 @@ const PageTitleStyle = styled.div`
   }
 `;
 
-function PageTitle({ pageTitle }) {
+function PageTitle(children) {
   return (
     <PageTitleStyle>
-      <h2>{pageTitle}</h2>
+      <h2>{children.pageTitle}</h2>
 
       <hr />
     </PageTitleStyle>
