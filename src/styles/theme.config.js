@@ -56,7 +56,7 @@ export const lightTheme = {
     p_text: "#4B5056",
     gray_1: "#BCB4B4",
     gray_2: "#363636",
-    gray_text: "#d0d5df",
+    gray_text: "#a1a4a8",
     headline_text: "#212529",
     card_text: "#212529",
     carmine_pink: "#e76161",

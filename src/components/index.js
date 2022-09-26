@@ -19,6 +19,7 @@ import Putcode from "./PutCode";
 import Loading from "./Spinner";
 import Switch from "./Switch";
 import UseScript from "./UseScript";
+import SocialIcon from "./Icons/SocialIcon";
 
 export {
   AcRecordCard,
@@ -42,4 +43,5 @@ export {
   Loading,
   Switch,
   UseScript,
+  SocialIcon,
 };

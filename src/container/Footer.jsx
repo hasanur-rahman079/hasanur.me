@@ -1,9 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import GSIcon from "../assets/icons/google-scholar.svg";
-import GH from "../assets/icons/github.svg";
-import RG from "../assets/icons/researchgate.svg";
+import { icons } from "../constants";
 
 const FooterSectionStyles = styled.div`
   margin-top: 4rem;
@@ -93,21 +91,21 @@ export default function Footer() {
           <div className="git">
             <a href="http://" target="_blank" rel="noopener noreferrer">
               <span>Github</span>
-              <img src={GH} alt="Github" />
+              <img src={icons.GH} alt="Github" />
             </a>
           </div>
 
           <div className="scholar">
             <a href="http://" target="_blank" rel="noopener noreferrer">
               <span>Google Scholar</span>
-              <img src={GSIcon} alt="Google Scholar Icon" />
+              <img src={icons.GS} alt="Google Scholar Icon" />
             </a>
           </div>
 
           <div className="gate">
             <a href="http://" target="_blank" rel="noopener noreferrer">
               <span>ResearchGate</span>
-              <img src={RG} alt="researchGate Icon" />
+              <img src={icons.RG} alt="researchGate Icon" />
             </a>
           </div>
         </div>
