@@ -12,6 +12,7 @@ import PageTitle from "./Typography/PageTitle";
 import Ptext from "./Typography/Ptext";
 import SectionTitle from "./Typography/SectionTitle";
 import DownloadButton from "./DownloadButton";
+import Photos from "./Photos";
 import ExLink from "./ExLink";
 import NavMenu from "./NavMenu";
 import Pbutton from "./Pbutton";
@@ -37,6 +38,7 @@ export {
   SectionTitle,
   DownloadButton,
   ExLink,
+  Photos,
   NavMenu,
   Pbutton,
   Putcode,

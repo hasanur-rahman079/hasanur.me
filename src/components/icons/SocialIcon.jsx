@@ -5,7 +5,7 @@ const SocialIconStyle = styled.div`
   display: grid;
   background: ${(props) => props.theme.color.bg};
   padding: 10px 20px;
-  width: 180px;
+  width: 200px;
   text-align: center;
   border-radius: 10px;
 
@@ -20,6 +20,7 @@ const SocialIconStyle = styled.div`
       font-size: 1.8rem;
       font-weight: 600;
       color: ${(props) => props.theme.color.p_text};
+      margin-bottom: 8px;
     }
 
     span {

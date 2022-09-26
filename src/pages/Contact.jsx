@@ -29,7 +29,7 @@ const ContactStyle = styled.div`
       justify-content: center;
 
       .title {
-        font-size: 1.6rem;
+        font-size: 2rem;
         font-weight: 600;
         margin-bottom: 1.5rem;
         color: ${(props) => props.theme.color.headline_text};
@@ -44,13 +44,13 @@ const ContactStyle = styled.div`
 
       .email__box {
         background: ${(props) => props.theme.color.bg};
-        padding: 10px 20px;
+        padding: 6px 20px;
         width: 400px;
 
         a {
           display: flex;
           align-items: center;
-          font-size: 18px;
+          font-size: 16px;
           color: ${(props) => props.theme.color.butterscotch};
 
           .icon {
