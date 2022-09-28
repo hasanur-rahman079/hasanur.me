@@ -4,10 +4,12 @@ import profexps from "../assets/data/profexp";
 import publications from "../assets/data/publications";
 import gallaryImg from "../assets/data/gallary";
 
-export default {
+const statData = {
   experience,
   organizings,
   profexps,
   publications,
   gallaryImg,
 };
+
+export default statData;

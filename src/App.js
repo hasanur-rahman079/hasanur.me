@@ -42,7 +42,7 @@ function App() {
         <AppStyles>
           <Router>
             <NavMenu toggleTheme={toggleTheme} />
-            <div class="contentWrap">
+            <div className="contentWrap">
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />

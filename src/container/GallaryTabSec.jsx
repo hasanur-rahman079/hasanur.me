@@ -55,9 +55,11 @@ const GallaryTabSecStyle = styled.div`
             }
           }
 
-          .item-active {
-            background-color: ${(props) => props.theme.color.butterscotch};
-            color: #fff;
+          .item__active {
+            background: ${(props) => props.theme.color.butterscotch};
+            h3 {
+              color: white;
+            }
           }
         }
       }
@@ -114,19 +116,26 @@ const GallaryTabSecStyle = styled.div`
 `;
 
 const allCatValues = [...new Set(Gallary.map((allCat) => allCat.category))];
-// console.log(allCatValues);
 
 function GallaryTabSec() {
-  const [catItems, setCatItems] = useState(allCatValues);
+  const [buttons, setButtons] = useState(allCatValues);
   const [items, setItems] = useState(Gallary);
+  const [activeButton, setActiveButton] = useState("Workshops");
 
-  const filterTab = (category) => {
-    const Items = Gallary.filter((curElem) => {
-      return curElem.category === category;
+  // Filter functions
+  const filterTab = (button) => {
+    setButtons(allCatValues);
+    setActiveButton(button);
+
+    // Filtered data return function
+    const filteredData = Gallary.filter((curElem) => {
+      return curElem.category === button;
     });
 
-    setItems(Items);
+    setItems(filteredData);
   };
+
+  // let activeClass = buttons ? " item__active" : "";
 
   return (
     <GallaryTabSecStyle>
@@ -134,14 +143,14 @@ function GallaryTabSec() {
         <div className="left__col">
           <div className="contents">
             <div className="app__image-filter-items">
-              {catItems.map((catMenu, index) => {
+              {buttons.map((catMenu, index) => {
                 return (
                   <div
                     key={index}
-                    className={`tab__Title ${
-                      catItems === catMenu ? "item-active" : ""
-                    } `}
                     onClick={() => filterTab(catMenu)}
+                    className={`tab__Title${
+                      activeButton === catMenu ? " item__active" : ""
+                    }`}
                   >
                     <h3>{catMenu}</h3>
                   </div>
@@ -154,12 +163,18 @@ function GallaryTabSec() {
         <div className="right__col">
           <div className="photos">
             {items.map((images, idx) => {
-              console.log(images);
               const { id, img } = images;
+
+              // console.log(images);
+
               return (
                 <div key={idx}>
                   <div key={id}>
-                    <Photos photo={img} />
+                    {images.category === "Workshops" ? (
+                      <Photos photo={img} />
+                    ) : (
+                      <Photos photo={img} />
+                    )}
                   </div>
                 </div>
               );

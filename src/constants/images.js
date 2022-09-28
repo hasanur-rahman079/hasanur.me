@@ -21,7 +21,7 @@ import c2 from "../assets/images/gallary/c2.jpg";
 import c3 from "../assets/images/gallary/c3.jpg";
 import c4 from "../assets/images/gallary/c4.jpg";
 
-export default {
+const images = {
   heroImgNew,
   heroImg,
   aboutImg,
@@ -43,3 +43,5 @@ export default {
   c3,
   c4,
 };
+
+export default images;
