@@ -6,7 +6,7 @@ export default function Home() {
     <div className="pageContainer">
       <HeroSection />
       <StatSection />
-      {/* <PubSection /> */}
+      <PubSection />
     </div>
   );
 }

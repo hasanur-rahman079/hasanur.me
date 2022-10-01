@@ -31,8 +31,20 @@ const Subtitle = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    h2 {
-      font-size: 3.2rem;
+    .title {
+      h2 {
+        font-size: 28px;
+      }
+    }
+
+    .btn {
+      padding: 3px 8px;
+      border-radius: 4px;
+
+      a {
+        font-size: 16px;
+        line-height: 28px;
+      }
     }
   }
 `;

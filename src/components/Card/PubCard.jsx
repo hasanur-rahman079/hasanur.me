@@ -13,7 +13,7 @@ import {
 const PubItemsStyles = styled.div`
   .pubItems_info {
     display: grid;
-    grid-template-columns: repeat(2, 650px);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 2.5rem;
 
     .allPub {
@@ -84,30 +84,71 @@ const PubItemsStyles = styled.div`
   @media only screen and (max-width: 768px) {
     .pubItems_info {
       display: grid;
-      grid-template-columns: auto;
+      grid-template-columns: 1fr;
 
-      h3 {
-        .pubtitle {
-          font-size: 2rem;
-        }
-      }
+      .allPub {
+        .pubContainer {
+          .cardHeader {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-row-gap: 1rem;
 
-      .jName {
-        font-size: 1.4rem;
-      }
+            .typeTag {
+              display: grid;
+              grid-column: 1/2;
+              grid-row: 1/2;
+            }
 
-      .jIssue,
-      .impact {
-        font-size: 1.4rem;
-      }
+            .pubDate {
+              display: flex;
+              grid-column: 2/3;
+              grid-row: 1/2;
+              justify-content: end;
+            }
 
-      .date {
-        font-size: 1.4rem;
-      }
+            .journal {
+              display: grid;
+              grid-row: 2/3;
+              grid-column: 1/3;
+              justify-content: start;
+              text-align: start;
+            }
+          }
 
-      .metrics {
-        .doi {
-          font-size: 1.4rem;
+          .cardBody {
+            margin: 1.6rem 0;
+
+            .pubtitle {
+              font-size: 1.8rem;
+              line-height: 28px;
+            }
+
+            .authors {
+              .authorsList {
+                font-size: 1.4rem;
+                line-height: 16px;
+              }
+            }
+          }
+
+          .cardFooter {
+            .metric {
+              .contents {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-row-gap: 1fr;
+                .doi {
+                  display: grid;
+                  grid-column: 1/2;
+                }
+                .icons {
+                  display: flex;
+                  grid-column: 1/2;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -194,7 +235,7 @@ export default function PubCard() {
                             <div key={index}>
                               {idType === "doi" ? (
                                 <div className="contents">
-                                  <div>
+                                  <div className="doi">
                                     <Doi title={doivalue} link={doivalue} />
                                   </div>
 

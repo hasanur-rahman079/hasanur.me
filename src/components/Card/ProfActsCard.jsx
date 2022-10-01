@@ -61,7 +61,7 @@ const ProfActsCardStyle = styled.div`
         .link {
           margin-top: 10px;
           a {
-            color: ${(props) => props.theme.color.p_text};
+            color: ${(props) => props.theme.color.link_text};
           }
         }
       }
@@ -72,6 +72,10 @@ const ProfActsCardStyle = styled.div`
       align-self: center;
       justify-content: end;
       width: 20%;
+
+      img {
+        border-radius: 5px;
+      }
     }
   }
 
@@ -102,10 +106,12 @@ const ProfActsCardStyle = styled.div`
           font-size: 16px;
         }
       }
+
+
       .right {
         width: 100%;
         justify-content: center;
-        margin-top: 3rem;
+        margin-top: 1rem;
 
         img {
           height: 18rem;

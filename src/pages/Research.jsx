@@ -1,64 +1,49 @@
-import React, { useEffect, useState } from "react";
-import { PubSection } from "../container";
+import React from "react";
 import styled from "styled-components";
-import { MdSearch } from "react-icons/md";
-import statData from "../constants";
+import { PageTitle, PubCard } from "../components";
+import { StatSection } from "../container";
+// import { MdSearch } from "react-icons/md";
+// import statData from "../constants";
 
 const PublicationsStyles = styled.div`
-  .container {
-    .pubNumber {
-      text-align: center;
-      margin-top: 10px;
-    }
+  .pubSearch {
+    position: relative;
+    width: 300px;
+    margin-top: 5rem;
 
-    .pubSearch {
-      position: relative;
-      width: 300px;
-      margin-top: 5rem;
+    form {
+      input {
+        width: 100%;
+        font-size: 2rem;
+        padding: 0.8rem;
+        color: var(--black);
+        border-radius: 6px;
+        outline: none;
+        border: none;
+      }
 
-      form {
-        input {
-          width: 100%;
-          font-size: 2rem;
-          padding: 0.8rem;
-          color: var(--black);
-          border-radius: 6px;
-          outline: none;
-          border: none;
-        }
+      .searchIcon {
+        position: absolute;
+        width: 2rem;
+        right: 1rem;
 
-        .searchIcon {
-          position: absolute;
-          width: 2rem;
-          right: 1rem;
-
-          path {
-            color: var(--deep-dark);
-          }
+        path {
+          color: var(--deep-dark);
         }
       }
     }
+  }
 
-    .allpub {
-      margin-top: 3rem;
-    }
+  .allpub {
+    margin-top: 3rem;
   }
 
   @media only screen and (max-width: 768px) {
-    .pubSearch {
-      width: 100%;
-    }
-
-    .allpub {
-      grid-template-columns: 1fr;
-    }
   }
 `;
 
 export default function Research() {
   // capture the search text that we'll search in the input box
-  // const [searchText, setSearchText] = useState("");
-
   // calling all the data from stat data by using useState (hook) N.B. Dont forget to import the hook here
   // const [pubData, setPubdata] = useState(PubInfo);
 
@@ -82,7 +67,7 @@ export default function Research() {
   //   if (!e.target.value.length > 0) {
   //     setPubdata(PubInfo);
   //   }
-  // }
+  // }  // const [searchText, setSearchText] = useState("");
 
   return (
     <PublicationsStyles className="pageContainer">
@@ -108,10 +93,13 @@ export default function Research() {
           </form>
         </div> */}
 
+      <PageTitle pageTitle="Research Records" />
+
+      <StatSection />
+
       <div className="allpub">
-        <PubSection />
+        <PubCard />
       </div>
-      {/* </div> */}
     </PublicationsStyles>
   );
 }

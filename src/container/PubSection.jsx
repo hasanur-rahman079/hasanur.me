@@ -3,8 +3,6 @@ import { PubCard, SectionTitle, UseScript } from "../components";
 import styled from "styled-components";
 
 const PubSectionStyles = styled.div`
-  margin: 80px 2rem;
-
   .pubsecItems {
     margin-top: 3rem;
     grid-gap: 2rem;
@@ -12,7 +10,7 @@ const PubSectionStyles = styled.div`
 
   @media only screen and (max-width: 768px) {
     .pubsecItems {
-      grid-template-columns: 1fr;
+      /* grid-template-columns: 1fr; */
     }
   }
 `;
