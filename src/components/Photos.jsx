@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import "lightgallery.js/dist/css/lightgallery.css";
+import { LightgalleryItem, LightgalleryProvider } from "react-lightgallery";
 
 const PhotosStyle = styled.div`
   img {
@@ -10,7 +12,13 @@ const PhotosStyle = styled.div`
 function Photos({ photo }) {
   return (
     <PhotosStyle>
-      <img src={photo} alt="" />
+      <LightgalleryProvider>
+        <LightgalleryItem group="any" src={photo}>
+          <a href={photo}>
+            <img src={photo} alt="" />
+          </a>
+        </LightgalleryItem>
+      </LightgalleryProvider>
     </PhotosStyle>
   );
 }

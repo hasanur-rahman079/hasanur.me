@@ -117,13 +117,13 @@ const GallaryTabSecStyle = styled.div`
 
 const allCatValues = [...new Set(Gallary.map((allCat) => allCat.category))];
 
-function GallaryTabSec() {
+function GallaryTabSec({ images }) {
   const [buttons, setButtons] = useState(allCatValues);
   const [items, setItems] = useState(Gallary);
   const [activeButton, setActiveButton] = useState("Workshops");
 
   // Filter functions
-  const filterTab = (button) => {
+  const filterTab = (button,) => {
     setButtons(allCatValues);
     setActiveButton(button);
 
@@ -171,9 +171,9 @@ function GallaryTabSec() {
                 <div key={idx}>
                   <div key={id}>
                     {images.category === "Workshops" ? (
-                      <Photos photo={img} />
+                      <Photos photo={img} galleryID="my-test-gallery" />
                     ) : (
-                      <Photos photo={img} />
+                      <Photos photo={img} galleryID="my-test-gallery" />
                     )}
                   </div>
                 </div>

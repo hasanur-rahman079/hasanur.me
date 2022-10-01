@@ -8,21 +8,21 @@ const ProfActsCardStyle = styled.div`
   margin: 0 auto;
 
   .contents {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    display: flex;
     grid-column: 2/12;
-    max-width: 100%;
-    margin: 0 auto;
     padding: 18px;
     border-radius: 5px;
-    grid-column-gap: 2rem;
     background-color: ${(props) => props.theme.color.bg_dark};
+    margin: 0 auto;
+    max-width: 100%;
 
     .left {
-      display: grid;
-      grid-column: 1 / span 9;
+      display: flex;
+      flex-direction: column;
+      width: 80%;
       align-self: start;
-      gap: 10px;
+      grid-row-gap: 10px;
+      padding-right: 10px;
 
       .name {
         font-size: 24px;
@@ -50,32 +50,45 @@ const ProfActsCardStyle = styled.div`
         font-weight: 500;
         color: ${(props) => props.theme.color.p_text};
 
-        span {
-          font-weight: 400;
+        .res {
+          p {
+            span {
+              font-weight: 400;
+            }
+          }
+        }
+
+        .link {
+          margin-top: 10px;
+          a {
+            color: ${(props) => props.theme.color.p_text};
+          }
         }
       }
     }
 
     .right {
       display: grid;
-      grid-column: 10 / span 3;
-      align-self: start;
+      align-self: center;
       justify-content: end;
+      width: 20%;
     }
   }
 
   @media only screen and (max-width: 768px) {
     .contents {
-      display: grid;
+      display: flex;
+      flex-direction: column;
       grid-template-columns: 1fr;
       grid-column: 1/13;
 
       .left {
-        display: grid;
-        grid-column: 1/2;
+        width: 100%;
+        padding-right: 0;
 
         .name {
-          font-size: 22px;
+          font-size: 21px;
+          line-height: 28px;
         }
 
         .title,
@@ -90,10 +103,14 @@ const ProfActsCardStyle = styled.div`
         }
       }
       .right {
-        display: grid;
-        grid-column: 1/2;
+        width: 100%;
         justify-content: center;
         margin-top: 3rem;
+
+        img {
+          height: 18rem;
+          object-fit: contain;
+        }
       }
     }
   }
@@ -104,12 +121,32 @@ function ProfActsCard(children) {
     <ProfActsCardStyle>
       <div className="contents">
         <div className="left">
-          <h2 className="name">{children.name}</h2>
-          <p className="title">{children.title}</p>
-          <p className="location">{children.location}</p>
+          <div>
+            <h2 className="name">{children.name}</h2>
+          </div>
+
+          <div>
+            <p className="title">
+              {children.title} ({children.date})
+            </p>
+          </div>
+
+          <div>
+            <p className="location">{children.location}</p>
+          </div>
+
           <div className="duties">
-            Responsibilities: 
-            <span> {children.duties}</span>
+            <div className="res">
+              <p>
+                Responsibilities: <span> {children.duties}</span>
+              </p>
+            </div>
+
+            <div className="link">
+              <a href={children.web} target="__blank">
+                Website
+              </a>
+            </div>
           </div>
         </div>
 
