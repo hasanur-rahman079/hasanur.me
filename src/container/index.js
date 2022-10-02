@@ -4,7 +4,6 @@ import PageGridCol from "./PageGridCol";
 import PubSection from "./PubSection";
 import Footer from "./Footer";
 import GallaryTab from "./GallaryTabSec";
-import TwitterPostEmbed from "./TwitterPostEmbed";
 
 export {
   HeroSection,
@@ -13,5 +12,4 @@ export {
   PubSection,
   Footer,
   GallaryTab,
-  TwitterPostEmbed,
 };
