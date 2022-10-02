@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  HeroSection,
-  StatSection,
-  PubSection,
-} from "../container";
+import { HeroSection, StatSection, PubSection } from "../container";
 
 export default function Home() {
   return (
