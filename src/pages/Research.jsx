@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { PageTitle, PubCard } from "../components";
 import { StatSection } from "../container";
+import { TabTitle } from "../utils/GeneralFunctions";
 // import { MdSearch } from "react-icons/md";
 // import statData from "../constants";
 
@@ -43,6 +44,8 @@ const PublicationsStyles = styled.div`
 `;
 
 export default function Research() {
+  TabTitle("Research - MD. Hasanur Rahman");
+
   // capture the search text that we'll search in the input box
   // calling all the data from stat data by using useState (hook) N.B. Dont forget to import the hook here
   // const [pubData, setPubdata] = useState(PubInfo);

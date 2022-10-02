@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { AcRecordCard } from "../components";
 import { images, pdfs } from "../constants";
-
 import { FaFileDownload } from "react-icons/fa";
+import { TabTitle } from "../utils/GeneralFunctions";
 
 const AcademicPageStyle = styled.div`
   .title {
@@ -65,6 +65,8 @@ const AcademicPageStyle = styled.div`
 `;
 
 function Academics() {
+  TabTitle("Academics - MD. Hasanur Rahman");
+
   return (
     <AcademicPageStyle className="pageContainer">
       <div className="title">

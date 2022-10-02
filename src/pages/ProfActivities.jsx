@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { ProfActsCard, PageTitle } from "../components";
 import { statData } from "../constants";
+import { TabTitle } from "../utils/GeneralFunctions";
 
 const ExperiencesStyles = styled.div`
   display: grid;
@@ -33,6 +34,8 @@ const ExperiencesStyles = styled.div`
 `;
 
 export default function ProfAct() {
+  TabTitle("Prof. Activities - MD. Hasanur Rahman");
+
   return (
     <ExperiencesStyles className="pageContainer">
       <div className="prof__Act">

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { images } from "../constants";
 import { Ptext } from "../components";
 import { Link } from "react-router-dom";
+import { TabTitle } from "../utils/GeneralFunctions";
 
 const AboutPageStyle = styled.div`
   display: flex;
@@ -78,6 +79,7 @@ const AboutPageStyle = styled.div`
 `;
 
 export default function About() {
+  TabTitle("About - MD. Hasanur Rahman");
   return (
     <AboutPageStyle className="pageContainer">
       <div>
@@ -152,9 +154,7 @@ export default function About() {
             </Ptext>
           </div>
 
-          <div className="right">
-            <img src="" alt="" />
-          </div>
+          <div className="right">{/* <img src="" alt="" /> */}</div>
         </div>
       </div>
 
@@ -180,9 +180,7 @@ export default function About() {
             </Ptext>
           </div>
 
-          <div className="right">
-            <img src="" alt="" />
-          </div>
+          <div className="right">{/* <img src="" alt="" /> */}</div>
         </div>
       </div>
 
@@ -204,9 +202,7 @@ export default function About() {
             </Ptext>
           </div>
 
-          <div className="right">
-            <img src="" alt="" />
-          </div>
+          <div className="right">{/* <img src="" alt="" /> */}</div>
         </div>
       </div>
 
@@ -224,9 +220,7 @@ export default function About() {
             </Ptext>
           </div>
 
-          <div className="right">
-            <img src="" alt="" />
-          </div>
+          <div className="right">{/* <img src="" alt="" /> */}</div>
         </div>
       </div>
     </AboutPageStyle>

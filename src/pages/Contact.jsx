@@ -9,9 +9,15 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { RiSpyFill } from "react-icons/ri";
-import { SiGooglescholar, SiPublons, SiResearchgate, SiScopus } from "react-icons/si";
+import {
+  SiGooglescholar,
+  SiPublons,
+  SiResearchgate,
+  SiScopus,
+} from "react-icons/si";
 import styled from "styled-components";
 import { SocialIcon } from "../components";
+import { TabTitle } from "../utils/GeneralFunctions";
 
 const ContactStyle = styled.div`
   .grid__container {
@@ -69,6 +75,8 @@ const ContactStyle = styled.div`
 `;
 
 function Contact() {
+  TabTitle("Follow - MD. Hasanur Rahman");
+
   return (
     <ContactStyle className="pageContainer">
       <div className="grid__container">

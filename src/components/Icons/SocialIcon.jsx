@@ -9,6 +9,10 @@ const SocialIconStyle = styled.div`
   text-align: center;
   border-radius: 10px;
 
+  @media only screen and (max-width: 768px) {
+    width: 190px;
+  }
+
   a {
     .icon {
       font-size: 35px;

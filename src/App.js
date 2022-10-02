@@ -14,6 +14,7 @@ import {
   Contact,
 } from "./pages";
 import { Footer } from "./container";
+import ScrollToTop from "./components/ScrollToTop";
 
 const AppStyles = styled.div`
   display: flex;
@@ -38,9 +39,10 @@ function App() {
 
   return (
     <>
-      <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
-        <AppStyles>
-          <Router>
+      <Router>
+        <ScrollToTop />
+        <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
+          <AppStyles>
             <NavMenu toggleTheme={toggleTheme} />
             <div className="contentWrap">
               <Routes>
@@ -54,9 +56,9 @@ function App() {
               </Routes>
             </div>
             <Footer />
-          </Router>
-        </AppStyles>
-      </ThemeProvider>
+          </AppStyles>
+        </ThemeProvider>
+      </Router>
     </>
   );
 }

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import PageTitle from "../components/Typography/PageTitle";
 import { GallaryTab } from "../container";
+import { TabTitle } from "../utils/GeneralFunctions";
 
 const GallaryStyles = styled.div`
   .content {
@@ -10,6 +11,8 @@ const GallaryStyles = styled.div`
 `;
 
 function Gallary() {
+  TabTitle("Gallary - MD. Hasanur Rahman");
+
   return (
     <GallaryStyles className="pageContainer">
       <PageTitle pageTitle="My Gallary" />

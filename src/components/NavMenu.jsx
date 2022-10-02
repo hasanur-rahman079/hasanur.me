@@ -18,6 +18,7 @@ const NavMenuStyles = styled.div`
   width: 100%;
   padding: 0.5rem 2rem;
   background: ${(props) => props.theme.color.bg};
+  box-shadow: ${(props) => props.theme.shadow.light};
 
   .logo {
     display: grid;
