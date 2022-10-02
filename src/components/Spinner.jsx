@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 const SpinnerStyles = styled.div`
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 600;
   color: gray;
   text-align: center;

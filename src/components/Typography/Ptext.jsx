@@ -10,6 +10,10 @@ const PStyle = styled.div`
     color: ${(props) => props.theme.color.link_text};
   }
 
+  a {
+    color: ${(props) => props.theme.color.link_text};
+  }
+
   @media only screen and (max-width: 768px) {
     font-size: 1.6rem;
   }

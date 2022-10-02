@@ -68,7 +68,7 @@ function Academics() {
   return (
     <AcademicPageStyle className="pageContainer">
       <div className="title">
-        <h2>Academic Backgrounds</h2>
+        <h2>Academic Records</h2>
 
         <div className="cv">
           <a href={pdfs.cv} target="_blank" rel="noreferrer">
@@ -87,7 +87,7 @@ function Academics() {
             dept="Faculty of Life Science, Department of Biotechnology and Genetic Engineering"
             session="2016-17"
             graduated="Feb, 2022"
-            info="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus leo in adipiscing turpis enim turpis. Massa condimentum elit faucibus netus arcu curabitur sit elementum. Enim amet donec eget amet, habitant faucibus tortor mi. Bibendum sed facilisis turpis gravida augue facilisis nibh quis etiam. Fusce mattis ornare placerat rhoncus amet nunc lectus. Vehicula id neque enim"
+            info="We were the department's second batch. The anticipated graduation date was December 31, 2020, but sadly, covid-19 takes longer than 1.5 years."
             Img={images.bsmrstu}
           />
         </div>
@@ -99,7 +99,7 @@ function Academics() {
             dept="Science (A)"
             session="2015-16"
             graduated="Aug, 2015"
-            info="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus leo in adipiscing turpis enim turpis. Massa condimentum elit faucibus netus arcu curabitur sit elementum. Enim amet donec eget amet, habitant faucibus tortor mi. Bibendum sed facilisis turpis gravida augue facilisis nibh quis etiam. Fusce mattis ornare placerat rhoncus amet nunc lectus. Vehicula id neque enim"
+            info="The cantonment board and the Bangladesh Army regulates Cantonment College, Jashore. The two years spent in this college provide a wealth of recollections."
             Img={images.ccj}
           />
         </div>

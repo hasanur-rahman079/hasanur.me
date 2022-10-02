@@ -1,5 +1,5 @@
 import React from "react";
-import { PubCard, SectionTitle, UseScript } from "../components";
+import { PubCardSlice, SectionTitle } from "../components";
 import styled from "styled-components";
 
 const PubSectionStyles = styled.div`
@@ -16,19 +16,17 @@ const PubSectionStyles = styled.div`
 `;
 
 export default function PubSection() {
-  UseScript("https://badge.dimensions.ai/badge.js");
-  UseScript("https://cdn.plu.mx/widget-popup.js");
   return (
     <PubSectionStyles>
       <div>
         <SectionTitle
-          title="Publications"
+          title="Recent Publications"
           btnText="View more"
-          link="/publications"
+          link="/research"
         />
 
         <div className="pubsecItems">
-          <PubCard />
+          <PubCardSlice />
         </div>
       </div>
     </PubSectionStyles>

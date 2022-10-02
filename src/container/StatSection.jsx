@@ -26,7 +26,7 @@ function StatSection() {
           number="6,877+"
           title="Total Read"
           from="ResearchGate"
-          link="https://getbootstrap.com/docs/5.2/content/typography/"
+          link="https://www.researchgate.net/profile/Md-Rahman-262"
         />
       </div>
 
@@ -35,7 +35,7 @@ function StatSection() {
           number="200+"
           title="Total Citations"
           from="Google Scholar"
-          link="https://getbootstrap.com/docs/5.2/content/typography/"
+          link="https://scholar.google.com/citations?hl=en&authuser=1&user=l2q048wAAAAJ"
         />
       </div>
 
@@ -44,7 +44,7 @@ function StatSection() {
           number="9"
           title="h & i10 Index"
           from="Google Scholar"
-          link="https://getbootstrap.com/docs/5.2/content/typography/"
+          link="https://scholar.google.com/citations?hl=en&authuser=1&user=l2q048wAAAAJ"
         />
       </div>
 
@@ -53,7 +53,7 @@ function StatSection() {
           number="302+"
           title="Recommendations"
           from="ResearchGate"
-          link="https://getbootstrap.com/docs/5.2/content/typography/"
+          link="https://www.researchgate.net/profile/Md-Rahman-262"
         />
       </div>
     </StatSectionStyle>

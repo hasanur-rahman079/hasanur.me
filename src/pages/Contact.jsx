@@ -9,7 +9,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { RiSpyFill } from "react-icons/ri";
-import { SiGooglescholar, SiResearchgate } from "react-icons/si";
+import { SiGooglescholar, SiPublons, SiResearchgate, SiScopus } from "react-icons/si";
 import styled from "styled-components";
 import { SocialIcon } from "../components";
 
@@ -90,6 +90,24 @@ function Contact() {
                 url="https://www.researchgate.net/profile/Md-Rahman-262"
                 iconCode={<SiResearchgate />}
                 name="ResearchGate"
+                userName="/MD. Hasanur Rahman"
+              />
+            </div>
+
+            <div>
+              <SocialIcon
+                url="https://www.scopus.com/authid/detail.uri?authorId=57216255896"
+                iconCode={<SiScopus />}
+                name="Scopus"
+                userName="/MD. Hasanur Rahman"
+              />
+            </div>
+
+            <div>
+              <SocialIcon
+                url="https://www.webofscience.com/wos/author/record/AAX-4023-2020"
+                iconCode={<SiPublons />}
+                name="Publoan"
                 userName="/MD. Hasanur Rahman"
               />
             </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Ptext } from "../components";
 import { images } from "../constants";
@@ -27,6 +28,7 @@ const HeroStyle = styled.div`
         font-weight: 600;
         font-family: "Helvetica Neue", sans-serif;
         color: ${(props) => props.theme.color.card_text};
+        margin-bottom: 2rem;
 
         .name {
           font-weight: 800;
@@ -36,6 +38,10 @@ const HeroStyle = styled.div`
 
       .hero_info {
         margin-top: 2rem;
+
+        a {
+          color: ${(props) => props.theme.color.link_text};
+        }
       }
 
       .hero_img {
@@ -92,17 +98,21 @@ export default function HeroSection() {
               </span>
             </h1>
 
+            <Ptext>Welcome to my digital gardern 🌱</Ptext>
+
             <div className="hero_info">
               <Ptext>
-                A fresh biotechnology and genetic engineering graduate
+                I'm a fresh biotechnology and genetic engineering graduate
                 interested in cancer informatics, and molecular drug designing
                 and development. Currently preparing for MSc/PhD studies in
                 abroad.
                 <br />
                 <br />
-                Check out my <span>research publications</span> on areas like
-                Cancer, Alzheimer's Disease, Drug designing or learn more{" "}
-                <span>about me</span>.
+                Check out my <Link to="/research">
+                  research publications
+                </Link>{" "}
+                on areas like Cancer, Alzheimer's Disease, Drug designing or
+                learn more <Link to="/about">about me</Link>.
               </Ptext>
             </div>
           </div>

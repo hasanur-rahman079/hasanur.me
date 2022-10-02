@@ -89,21 +89,21 @@ export default function Footer() {
 
         <div className="bottom">
           <div className="git">
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/hasanur-rahman079" target="_blank" rel="noopener noreferrer">
               <span>Github</span>
               <img src={icons.GH} alt="Github" />
             </a>
           </div>
 
           <div className="scholar">
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a href="https://scholar.google.com/citations?hl=en&authuser=1&user=l2q048wAAAAJ" target="_blank" rel="noopener noreferrer">
               <span>Google Scholar</span>
               <img src={icons.GS} alt="Google Scholar Icon" />
             </a>
           </div>
 
           <div className="gate">
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.researchgate.net/profile/Md-Rahman-262" target="_blank" rel="noopener noreferrer">
               <span>ResearchGate</span>
               <img src={icons.RG} alt="researchGate Icon" />
             </a>

@@ -1,6 +1,7 @@
 import AcRecordCard from "./Card/AcaRecordCard";
 import ProfActsCard from "./Card/ProfActsCard";
 import PubCard from "./Card/PubCard";
+import PubCardSlice from "./Card/PubCardSlice";
 import StatCard from "./Card/StatCard";
 import Altmetric from "./Icons/Altmetric";
 import DiBadge from "./Icons/DiBadge";
@@ -19,13 +20,13 @@ import Pbutton from "./Pbutton";
 import Putcode from "./PutCode";
 import Loading from "./Spinner";
 import Switch from "./Switch";
-import UseScript from "./UseScript";
 import SocialIcon from "./Icons/SocialIcon";
 
 export {
   AcRecordCard,
   ProfActsCard,
   PubCard,
+  PubCardSlice,
   StatCard,
   Altmetric,
   DiBadge,
@@ -44,6 +45,5 @@ export {
   Putcode,
   Loading,
   Switch,
-  UseScript,
   SocialIcon,
 };
