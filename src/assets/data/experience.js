@@ -5,15 +5,15 @@ const Experiences = {
   research: [
     {
       id: uuidv4(),
-      img: orglogo.jabet,
-      title: "Editorial Assistant",
+      img: orglogo.khu,
+      title: "Research Assistant (Virtual)",
       institute:
-        "Journal of Advanced Biotechnology and Experimental Therapeutics",
-      weblink: "https://www.bsmiab.org/jabet/editorial-board/",
-      address: "South Korea, Seoul,",
-      time: "Jun 2020 - Present",
+        " Department of Pathology, College of Korean Medicine, Kyung Hee University",
+      weblink: "https://khu.elsevierpure.com/en/persons/bonglee-kim/network/",
+      address: "Seoul, 02447, Republic of Korea.",
+      time: "Feb 2022 - Present",
       focus:
-        "Reviewing Emerging Research Findings, Molecular Pharmacology Strategies and Drug Designing Using In-Silico Techniques.",
+        "Cancer Material Developments, Reviewing Cancer Immunotherapies, Bioinformatics",
     },
 
     {
@@ -30,15 +30,14 @@ const Experiences = {
 
     {
       id: uuidv4(),
-      img: orglogo.khu,
-      title: "Research Assistant (Virtual)",
+      img: orglogo.jabet,
+      title: "Editorial Assistant",
       institute:
-        " Department of Pathology, College of Korean Medicine, Kyung Hee University",
-      weblink: "https://khu.elsevierpure.com/en/persons/bonglee-kim/network/",
-      address: "Seoul, 02447, Republic of Korea.",
-      time: "Feb 2022 - Mar 2022",
-      focus:
-        "Molecular Signaling Pathways Design, Reviewing Cancer Immunotherapies.",
+        "Journal of Advanced Biotechnology and Experimental Therapeutics",
+      weblink: "https://www.bsmiab.org/jabet/editorial-board/",
+      address: "South Korea, Seoul,",
+      time: "Jun 2020 - Present",
+      focus: "Reviewing literatures",
     },
 
     {
@@ -62,7 +61,7 @@ const Experiences = {
       address: "Dhaka, Bangladesh.",
       time: "Feb 2021 - Mar 2021",
       focus:
-        "Under a Ministry of Education Research Project Titled: Effects of Insulin on Breast Cancer Growth and Proliferation Among Diabetic Patients in Bangladesh",
+        "Under a Ministry of Education Research Project Titled: Effects of Insulin on Breast Cancer Growth and Proliferation Among Diabetic Patients in Bangladesh. Project Supervisor was Dr. Salima Akter",
     },
   ],
 
@@ -75,8 +74,7 @@ const Experiences = {
       website: "https://www.exomeit.com/",
       date: "Dec 2020 - Present",
       location: "Dhaka, Bangladesh",
-      focus:
-        " Under a Ministry of Education Research Project Titled: Effects of Insulin on Breast Cancer Growth and Proliferation Among Diabetic Patients in Bangladesh",
+      focus: "Executing the overall operations",
     },
 
     {
@@ -85,10 +83,10 @@ const Experiences = {
       title: "Chief Creative & Branding Officer",
       name: "Community of Biotechnology (COB)",
       website: "https://www.cobt.org/about/leaders",
-      date: "Sep 2020 - Present",
+      date: "Sep 2020 - Sep 2022",
       location: "Dhaka, Bangladesh",
       focus:
-        " Under a Ministry of Education Research Project Titled: Effects of Insulin on Breast Cancer Growth and Proliferation Among Diabetic Patients in Bangladesh",
+        " Managing and Chief of Media and Communication Department, Department of Publication, Department of Visual Arts",
     },
   ],
 
@@ -101,7 +99,7 @@ const Experiences = {
       website: "https://www.bsmiab.org/conference-2020/",
       date: "Nov 2020",
       location: "Dhaka, Bangladesh",
-      focus: "Managing all",
+      focus: "Executive mamber and organizing and managing the team operations",
     },
 
     {
@@ -113,7 +111,7 @@ const Experiences = {
         "https://www.cobt.org/events/international-biotech-symposium-2021/",
       date: "Feb 2021",
       location: "Dhaka, Bangladesh",
-      focus: "Managing all",
+      focus: "Organizer and team operations",
     },
 
     {
@@ -125,7 +123,7 @@ const Experiences = {
         "https://www.cobt.org/events/2nd-bsmiab-cob-international-conference-on-covid-1/",
       date: "Nov 2021",
       location: "Dhaka, Bangladesh",
-      focus: "Managing all",
+      focus: "Executive mamber and organizing and managing the team operations",
     },
   ],
 };

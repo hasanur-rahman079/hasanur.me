@@ -98,7 +98,7 @@ export default function HeroSection() {
               </span>
             </h1>
 
-            <Ptext>Welcome to my digital gardern 🌱</Ptext>
+            <Ptext>Welcome to my digital garden 🌱</Ptext>
 
             <div className="hero_info">
               <Ptext>

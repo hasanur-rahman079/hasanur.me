@@ -66,10 +66,21 @@ const ContactStyle = styled.div`
       }
     }
   }
+
   @media only screen and (max-width: 768px) {
     .grid__container {
       display: grid;
       grid-template-columns: 1fr;
+
+      .grid__col {
+        .title {
+          text-align: center;
+        }
+        .icon__container {
+          grid-gap: 10px;
+          justify-content: center;
+        }
+      }
     }
   }
 `;

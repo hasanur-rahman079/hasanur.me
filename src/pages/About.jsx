@@ -90,30 +90,27 @@ export default function About() {
             <hr />
 
             <Ptext>
-              Hey, I’m MD. Hasanur Rahman! Welcome to my digital garden for the
-              projects I’ve created, research papers I’ve published and anything
-              else I want to show the world.
+              Hey, I'm MD. Hasanur Rahman, Welcome to my digital garden, where I
+              shares my projects, academic papers, and other things that I'd
+              like to share with the world.
               <br />
               <br />
-              Check out the <Link to="/research">research</Link> page to see the
-              research articles on life science I’ve worked and published. I’ve
-              worked on Cancer, Alzheimer's Disease and Drug designing. I have
-              some ongoing projects on submission based on In-silico studies,
-              they will be added to the list when available online. I’ve
-              interest to work the field of Bioinformatics.
+              Check out the <Link to="/research">research</Link> page for all
+              the research articles I’ve worked. Most of my working areas are on
+              Cancer, Alzheimer's Disease and Drug designing.
               <br />
               <br />
-              My only motivation for this site is to share what I’ve learned
-              with the world and document notes for myself and hopefully
-              connects with new people. My site doesn’t have any advertisement,
-              affiliate links. This site only uses the google analytics so that
-              I can understand how people are noticing my records.
+              My sole motivation for creating this website is to connect with
+              new individuals while also documenting my learnings for future
+              reference. There are no advertisements or affiliate connections on
+              my website. This website just makes use of Google Analytics so
+              that I may learn how my records are being noticed by people.
               <br />
               <br />
-              You can contact me by email to say hi! You can also follow me on
-              social media. You’ll find all the links in the{" "}
-              <Link to="/contact">contact</Link> page. I always appreciate
-              meeting new people.
+              To say hello, send me an email. Additionally, you can follow me on
+              social media. All of the links can be found on the{" "}
+              <Link to="/contact">contact page</Link>. I enjoy getting to know
+              new individuals.
             </Ptext>
           </div>
 
@@ -134,23 +131,24 @@ export default function About() {
               <i>Updated October 2nd, 2022</i>
               <br />
               <br />
-              Nothing too exciting going on in my life now. I’ve received my
-              graduation degree on the last February 2022 and got a scholarship
-              on July from Kyung Hee university for pursuing MSc in Cancer
-              Preventive Materials Development department. But unfortunately, my
-              visa has been refused. So, preparing myself in better ways for the
-              next try.
+              Not much exciting is happening in my life right now. I’ve received
+              my graduation degree on the last February 2022 and got a
+              scholarship on July from Kyung Hee university for pursuing MSc in
+              Cancer Preventive Materials Development department. And will be
+              join in this December.
               <br />
               <br />
-              Besides the preparation for better fit with world, I do code on
-              JavaScript, reviewing my own submitted papers that sent for
-              revisions and preparing some bioinformatics projects pipeline.
+              In addition to preparing for a better match with the world, I
+              write JavaScript code, edit my own articles that have been
+              submitted for revision, and set up pipelines for various
+              bioinformatics projects.
               <br />
               <br />
-              Overall, this hasn’t been the greatest year for me, a lot of bad
-              stuff happened and my immune system getting upsets. Lool! But
-              everything is starting to stabilize, and I hope to get back into
-              the swing of research, coding and being social.
+              Overall, I can't say that this has been my best year because a lot
+              of unpleasant things have happened and my immune system has been
+              unsettled. Lool! But now that things are beginning to settle down,
+              I am planning to resume my research, coding, and social
+              activities.
             </Ptext>
           </div>
 
@@ -166,13 +164,13 @@ export default function About() {
             <hr />
 
             <Ptext>
-              My educational curves look like getting down after I passed
-              secondary education with excellent academic records. The reason
-              could be my understanding between the class lecture and the
-              real-world application. I always prioritize the real-world
-              application of what I’m learning. That’s why programming language
-              like Python and JavaScript finds my interest to focus on
-              bioinformatics sector.
+              After I graduated from high school with stellar grades, it appears
+              that my educational curves are beginning to fall. My comprehension
+              of the connection between the lecture in class and the application
+              in real life may be the cause. I always give the practical
+              application of what I'm learning top priority. That is why I spent
+              times in the bioinformatics areas and learned programming
+              languages like Python and JavaScript.
               <br />
               <br />
               Find my Educational records on the
