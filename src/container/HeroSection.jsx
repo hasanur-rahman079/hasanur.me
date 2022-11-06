@@ -7,19 +7,22 @@ import { images } from "../constants";
 const HeroStyle = styled.div`
   .hero {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    /* flex-wrap: wrap; */
     grid-gap: 50px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     margin: 30px auto;
 
     .left_items {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      display: grid;
+      /* flex-direction: column; */
+      grid-column: 1/2;
       max-width: 700px;
       width: 45vw;
+      margin: 0 auto;
 
       .hero_heading {
         display: flex;
@@ -43,32 +46,33 @@ const HeroStyle = styled.div`
           color: ${(props) => props.theme.color.link_text};
         }
       }
+    }
 
-      .hero_img {
-        img {
-          display: inline-block;
-          max-width: 100%;
-          overflow: hidden;
-          position: relative;
-          box-sizing: border-box;
-          margin: 0;
-          border-radius: 10px;
-        }
+    .hero_img {
+      display: grid;
+      grid-column: 2/3;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        border-radius: 10px;
+        width: 360px;
+        height: auto;
       }
     }
   }
 
   @media only screen and (max-width: 768px) {
     .hero {
-      justify-content: flex-start;
-      grid-gap: 0;
-
-      .hero_info {
-        text-align: justify;
-      }
+      display: grid;
+      grid-template-columns: auto;
+      grid-gap: 4rem;
 
       .left_items {
+        display: grid;
+        grid-column: 1/2;
         width: 100vw;
+        padding: 0 3rem;
 
         .hero_heading {
           display: flex;
@@ -77,8 +81,19 @@ const HeroStyle = styled.div`
           font-size: 3rem;
         }
 
-        .downloadbtn {
-          font-size: 1.5rem;
+        .hero_info {
+          text-align: justify;
+        }
+      }
+
+      .hero_img {
+        display: grid;
+        grid-column: 1/2;
+
+        img {
+          border-radius: 10px;
+          width: 340px;
+          height: auto;
         }
       }
     }
@@ -118,7 +133,7 @@ export default function HeroSection() {
           </div>
 
           <div className="hero_img">
-            <img src={images.heroImgNew} alt="Hasanur Rahman" />
+            <img src={images.heroHasanur} alt="MD. Hasanur Rahman, Hasan" />
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@ const PhotosStyle = styled.div`
 function Photos({ photo }) {
   return (
     <PhotosStyle>
-      <img src={photo} alt="" />
+      <img src={photo} alt="MD. Hasanur Rahman, Hasanur Rahman, Hasan, Researcher" />
     </PhotosStyle>
   );
 }

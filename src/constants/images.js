@@ -1,5 +1,6 @@
 import heroImgNew from "../assets/images/hero-img-new.png";
 import heroImg from "../assets/images/hasan.png";
+import heroHasanur from "../assets/images/hasanur.jpg";
 import aboutImg from "../assets/images/about_me.png";
 import ccj from "../assets/images/ccj.png";
 import bsmrstu from "../assets/images/bsmrstu.png";
@@ -22,6 +23,7 @@ import c3 from "../assets/images/gallary/c3.jpg";
 import c4 from "../assets/images/gallary/c4.jpg";
 
 const images = {
+  heroHasanur,
   heroImgNew,
   heroImg,
   aboutImg,
