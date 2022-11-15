@@ -4,15 +4,7 @@ import styled, { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./styles/theme.config";
 
 import { NavMenu } from "./components";
-import {
-  Home,
-  About,
-  Academics,
-  Research,
-  ProfAct,
-  Gallary,
-  Contact,
-} from "./pages";
+import { Home, About, Research, ProfAct, Gallary, Contact } from "./pages";
 import { Footer } from "./container";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -48,7 +40,6 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/academics" element={<Academics />} />
                 <Route path="/research" element={<Research />} />
                 <Route path="/experiences" element={<ProfAct />} />
                 <Route path="/gallary" element={<Gallary />} />

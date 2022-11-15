@@ -4,6 +4,7 @@ import { images } from "../constants";
 import { Ptext } from "../components";
 import { Link } from "react-router-dom";
 import { TabTitle } from "../utils/GeneralFunctions";
+import Academic from "../components/Academic";
 
 const AboutPageStyle = styled.div`
   display: flex;
@@ -91,20 +92,20 @@ export default function About() {
 
             <Ptext>
               Hey, I'm MD. Hasanur Rahman, Welcome to my digital garden, where I
-              shares my projects, academic papers, and other things that I'd
-              like to share with the world.
+              share my projects, academic papers, and other things that I'd like
+              to share with the world.
               <br />
               <br />
               Check out the <Link to="/research">research</Link> page for all
-              the research articles I’ve worked. Most of my working areas are on
-              Cancer, Alzheimer's Disease and Drug designing.
+              the research articles I’ve worked on. Most of my working areas are
+              on Cancer, Alzheimer's Disease and Drug designing.
               <br />
               <br />
               My sole motivation for creating this website is to connect with
               new individuals while also documenting my learnings for future
               reference. There are no advertisements or affiliate connections on
-              my website. This website just makes use of Google Analytics so
-              that I may learn how my records are being noticed by people.
+              my website. I have written some learning articles and they’ll
+              publish soon here.
               <br />
               <br />
               To say hello, send me an email. Additionally, you can follow me on
@@ -128,20 +129,20 @@ export default function About() {
             <hr />
 
             <Ptext>
-              <i>Updated October 2nd, 2022</i>
+              <i>Updated November 15, 2022</i>
               <br />
               <br />
-              Not much exciting is happening in my life right now. I’ve received
-              my graduation degree on the last February 2022 and got a
-              scholarship on July from Kyung Hee university for pursuing MSc in
-              Cancer Preventive Materials Development department. And will be
-              join in this December.
+              Not much exciting is happening in my life right now. I received my
+              graduate degree the last February 2022 and got a scholarship in
+              July from Kyung Hee university for pursuing MSc in the Cancer
+              Preventive Materials Development department. And will be joining
+              this December.
               <br />
-              <br />
-              In addition to preparing for a better match with the world, I
-              write JavaScript code, edit my own articles that have been
-              submitted for revision, and set up pipelines for various
-              bioinformatics projects.
+              <br />I have an immense interest in coding and love to write code
+              in Javascript and Python languages. I use ReactJs, NextJs, and
+              Django and have built some applications on them. You may find it
+              on the
+              <a href="https://exomeit.com"> ExomeIT</a> projects page.
               <br />
               <br />
               Overall, I can't say that this has been my best year because a lot
@@ -159,7 +160,7 @@ export default function About() {
       <div>
         <div className="contents">
           <div className="left">
-            <h2>My Educationsl Records</h2>
+            <h2>My BSc Life</h2>
 
             <hr />
 
@@ -169,8 +170,8 @@ export default function About() {
               of the connection between the lecture in class and the application
               in real life may be the cause. I always give the practical
               application of what I'm learning top priority. That is why I spent
-              times in the bioinformatics areas and learned programming
-              languages like Python and JavaScript.
+              time in the bioinformatics areas and learned programming languages
+              like Python and JavaScript.
               <br />
               <br />
               Find my Educational records on the
@@ -221,6 +222,8 @@ export default function About() {
           <div className="right">{/* <img src="" alt="" /> */}</div>
         </div>
       </div>
+
+      <Academic />
     </AboutPageStyle>
   );
 }

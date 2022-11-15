@@ -23,7 +23,7 @@ function StatSection() {
     <StatSectionStyle>
       <div>
         <StatCard
-          number="6,877+"
+          number="6k+"
           title="Total Read"
           from="ResearchGate"
           link="https://www.researchgate.net/profile/Md-Rahman-262"
@@ -32,7 +32,7 @@ function StatSection() {
 
       <div>
         <StatCard
-          number="200+"
+          number="219"
           title="Total Citations"
           from="Google Scholar"
           link="https://scholar.google.com/citations?hl=en&authuser=1&user=l2q048wAAAAJ"
@@ -42,7 +42,7 @@ function StatSection() {
       <div>
         <StatCard
           number="9"
-          title="h & i10 Index"
+          title="h Index"
           from="Google Scholar"
           link="https://scholar.google.com/citations?hl=en&authuser=1&user=l2q048wAAAAJ"
         />
@@ -50,10 +50,10 @@ function StatSection() {
 
       <div>
         <StatCard
-          number="302+"
-          title="Recommendations"
+          number="9"
+          title="i10 Index"
           from="ResearchGate"
-          link="https://www.researchgate.net/profile/Md-Rahman-262"
+          link="https://scholar.google.com/citations?hl=en&authuser=1&user=l2q048wAAAAJ"
         />
       </div>
     </StatSectionStyle>

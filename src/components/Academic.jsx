@@ -64,11 +64,11 @@ const AcademicPageStyle = styled.div`
   }
 `;
 
-function Academics() {
+function Academic() {
   TabTitle("Academics - MD. Hasanur Rahman");
 
   return (
-    <AcademicPageStyle className="pageContainer">
+    <AcademicPageStyle>
       <div className="title">
         <h2>Academic Records</h2>
 
@@ -110,4 +110,4 @@ function Academics() {
   );
 }
 
-export default Academics;
+export default Academic;

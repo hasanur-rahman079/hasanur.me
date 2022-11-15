@@ -39,6 +39,7 @@ const NavMenuStyles = styled.div`
     text-align: right;
     display: flex;
     grid-column: 2/3;
+    justify-content: right;
 
     li {
       display: inline-block;
@@ -270,18 +271,6 @@ export default function NavMenu({ toggleTheme }) {
             tabIndex={0}
           >
             About me
-          </NavLink>
-        </li>
-
-        <li>
-          <NavLink
-            to="/academics"
-            onClick={() => SetShowNav(!showNav)}
-            role="button"
-            onKeyDown={() => SetShowNav(!showNav)}
-            tabIndex={0}
-          >
-            Academic
           </NavLink>
         </li>
 
