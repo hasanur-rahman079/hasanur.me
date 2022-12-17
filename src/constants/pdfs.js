@@ -1,4 +1,4 @@
-import cv from "../assets/pdf/Hasan_CV_updated July.pdf";
+import cv from "../assets/pdf/Hasan_CV_Dec_22.pdf";
 
 const pdfs = { cv };
 
