@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { pdfs } from "../constants";
 
 const DownloadStyle = styled.div`
   .downloadbtn {
@@ -19,11 +20,7 @@ function DownloadButton() {
   return (
     <DownloadStyle>
       <div className="downloadbtn">
-        <a
-          href={require("../assets/pdf/Hasan_CV_updated July.pdf")}
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href={pdfs.cv} target="_blank" rel="noreferrer">
           View Academic CV
         </a>
       </div>

@@ -2,11 +2,21 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import styled, { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./styles/theme.config";
-
-import { NavMenu } from "./components";
-import { Home, About, Research, ProfAct, Gallary, Contact } from "./pages";
+import { NavMenu, PageNotFound } from "./components";
+import {
+  Home,
+  About,
+  Research,
+  ProfAct,
+  Gallary,
+  Contact,
+  Blogs,
+  BlogDetails,
+} from "./pages";
 import { Footer } from "./container";
 import ScrollToTop from "./components/ScrollToTop";
+import { ApolloProvider } from "@apollo/client";
+import { client } from "./lib/Client";
 
 const AppStyles = styled.div`
   display: flex;
@@ -31,25 +41,30 @@ function App() {
 
   return (
     <>
-      <Router>
-        <ScrollToTop />
-        <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
-          <AppStyles>
-            <NavMenu toggleTheme={toggleTheme} />
-            <div className="contentWrap">
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/research" element={<Research />} />
-                <Route path="/experiences" element={<ProfAct />} />
-                <Route path="/gallary" element={<Gallary />} />
-                <Route path="/follow" element={<Contact />} />
-              </Routes>
-            </div>
-            <Footer />
-          </AppStyles>
-        </ThemeProvider>
-      </Router>
+      <ApolloProvider client={client}>
+        <Router>
+          <ScrollToTop />
+          <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
+            <AppStyles>
+              <NavMenu toggleTheme={toggleTheme} />
+              <div className="contentWrap">
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/research" element={<Research />} />
+                  <Route path="/experiences" element={<ProfAct />} />
+                  <Route path="/gallary" element={<Gallary />} />
+                  <Route path="/follow" element={<Contact />} />
+                  <Route exact path="/blog" element={<Blogs />} />
+                  <Route path="/blog/:slug" element={<BlogDetails />} />
+                  <Route path="*" element={<PageNotFound />} />
+                </Routes>
+              </div>
+              <Footer />
+            </AppStyles>
+          </ThemeProvider>
+        </Router>
+      </ApolloProvider>
     </>
   );
 }

@@ -21,6 +21,7 @@ import Putcode from "./PutCode";
 import Loading from "./Spinner";
 import Switch from "./Switch";
 import SocialIcon from "./Icons/SocialIcon";
+import PageNotFound from "./404";
 
 export {
   AcRecordCard,
@@ -46,4 +47,5 @@ export {
   Loading,
   Switch,
   SocialIcon,
+  PageNotFound,
 };

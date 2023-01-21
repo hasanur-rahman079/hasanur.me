@@ -9,6 +9,7 @@ import {
   Altmetric,
   Loading,
 } from "../../components";
+// import SkeletonArticle from "../../skeletons/SkeletonArticle";
 
 const PubItemsStyles = styled.div`
   .total__Pub {
@@ -31,6 +32,10 @@ const PubItemsStyles = styled.div`
         border-radius: 0.5rem;
         background-color: ${(props) => props.theme.color.bg_dark};
         color: ${(props) => props.theme.color.card_text};
+
+        &:hover {
+          background-color: ${(props) => props.theme.color.gray_1};
+        }
 
         .cardHeader {
           display: flex;
@@ -192,6 +197,21 @@ export default function PubCard() {
       .catch((error) => setIsError(error.message))
       .finally(() => setLoading(false));
   }, []);
+
+  // useEffect(() => {
+  //   setTimeout(async () => {
+  //     const res = await axios.get(
+  //       "https://pub.orcid.org/v3.0/0000-0001-9238-3149/works",
+  //       {
+  //         headers: {
+  //           Accept: "application/json",
+  //         },
+  //       }
+  //     );
+  //     const dataOut = await res.json();
+  //     setwork(dataOut.data.group);
+  //   }, 5000);
+  // });
 
   // console.log(work.length);
 

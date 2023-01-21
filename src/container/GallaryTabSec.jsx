@@ -123,7 +123,7 @@ function GallaryTabSec({ images }) {
   const [activeButton, setActiveButton] = useState("Workshops");
 
   // Filter functions
-  const filterTab = (button,) => {
+  const filterTab = (button) => {
     setButtons(allCatValues);
     setActiveButton(button);
 

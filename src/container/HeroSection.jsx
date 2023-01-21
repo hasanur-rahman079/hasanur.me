@@ -134,6 +134,7 @@ export default function HeroSection() {
 
           <div className="hero_img">
             <img src={images.heroHasanur} alt="MD. Hasanur Rahman, Hasan" />
+            
           </div>
         </div>
       </div>
