@@ -1,15 +1,16 @@
 import React from "react";
 import { HeroSection, StatSection, PubSection } from "../container";
-import { TabTitle } from "../utils/GeneralFunctions";
+import SEO from "../lib/SEO";
 
 export default function Home() {
-  TabTitle("Home - MD. Hasanur Rahman");
-
   return (
-    <div className="pageContainer">
-      <HeroSection />
-      <StatSection />
-      <PubSection />
-    </div>
+    <>
+      <SEO pageTitle="Home" />
+      <div className="pageContainer">
+        <HeroSection />
+        <StatSection />
+        <PubSection />
+      </div>
+    </>
   );
 }

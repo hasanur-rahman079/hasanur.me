@@ -1,14 +1,28 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 function Altmetric({ doi }) {
   return (
-    <div>
+    <>
+      <Helmet>
+        {/* Altmetric */}
+        <script
+          type="text/javascript"
+          src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"
+        ></script>
+      </Helmet>
+
       <div
-        className="altmetric-embed"
-        data-badge-type="donut"
+        data-badge-popover="right"
+        data-badge-type="2"
         data-doi={doi}
-      ></div>
-    </div>
+        data-condensed="true"
+        data-hide-no-mentions="true"
+        className="altmetric-embed"
+      >
+
+      </div>
+    </>
   );
 }
 

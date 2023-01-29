@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { ProfActsCard, PageTitle } from "../components";
 import { statData } from "../constants";
-import { TabTitle } from "../utils/GeneralFunctions";
+import SEO from "../lib/SEO";
 
 const ExperiencesStyles = styled.div`
   display: grid;
@@ -34,84 +34,86 @@ const ExperiencesStyles = styled.div`
 `;
 
 export default function ProfAct() {
-  TabTitle("Prof. Activities - MD. Hasanur Rahman");
-
   return (
-    <ExperiencesStyles className="pageContainer">
-      <div className="prof__Act">
-        <div className="title">
-          <PageTitle pageTitle="Research Experiences" />
+    <>
+      <SEO pageTitle="Experience" />
+
+      <ExperiencesStyles className="pageContainer">
+        <div className="prof__Act">
+          <div className="title">
+            <PageTitle pageTitle="Research Experiences" />
+          </div>
+
+          <div className="cards">
+            {statData.Experience.research.map((res) => {
+              // console.log(res)
+              return (
+                <div key={res.id}>
+                  <ProfActsCard
+                    name={res.institute}
+                    title={res.title}
+                    date={res.time}
+                    location={res.address}
+                    duties={res.focus}
+                    web={res.weblink}
+                    Img={res.img}
+                  />
+                </div>
+              );
+            })}
+          </div>
         </div>
 
-        <div className="cards">
-          {statData.Experience.research.map((res) => {
-            // console.log(res)
-            return (
-              <div key={res.id}>
-                <ProfActsCard
-                  name={res.institute}
-                  title={res.title}
-                  date={res.time}
-                  location={res.address}
-                  duties={res.focus}
-                  web={res.weblink}
-                  Img={res.img}
-                />
-              </div>
-            );
-          })}
-        </div>
-      </div>
+        <div className="prof__Act">
+          <div className="title">
+            <PageTitle pageTitle="Leaderships" />
+          </div>
 
-      <div className="prof__Act">
-        <div className="title">
-          <PageTitle pageTitle="Leaderships" />
-        </div>
-
-        <div className="cards">
-          {statData.Experience.profexps.map((res) => {
-            // console.log(res)
-            return (
-              <div key={res.id}>
-                <ProfActsCard
-                  name={res.name}
-                  title={res.title}
-                  date={res.date}
-                  location={res.location}
-                  duties={res.focus}
-                  web={res.website}
-                  Img={res.img}
-                />
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      <div className="prof__Act">
-        <div className="title">
-          <PageTitle pageTitle="Conference organized" />
+          <div className="cards">
+            {statData.Experience.profexps.map((res) => {
+              // console.log(res)
+              return (
+                <div key={res.id}>
+                  <ProfActsCard
+                    name={res.name}
+                    title={res.title}
+                    date={res.date}
+                    location={res.location}
+                    duties={res.focus}
+                    web={res.website}
+                    Img={res.img}
+                  />
+                </div>
+              );
+            })}
+          </div>
         </div>
 
-        <div className="cards">
-          {statData.Experience.organizings.map((res) => {
-            // console.log(res)
-            return (
-              <div key={res.id}>
-                <ProfActsCard
-                  name={res.name}
-                  title={res.title}
-                  date={res.date}
-                  location={res.location}
-                  duties={res.focus}
-                  web={res.website}
-                  Img={res.img}
-                />
-              </div>
-            );
-          })}
+        <div className="prof__Act">
+          <div className="title">
+            <PageTitle pageTitle="Conference organized" />
+          </div>
+
+          <div className="cards">
+            {statData.Experience.organizings.map((res) => {
+              // console.log(res)
+              return (
+                <div key={res.id}>
+                  <ProfActsCard
+                    name={res.name}
+                    title={res.title}
+                    date={res.date}
+                    location={res.location}
+                    duties={res.focus}
+                    web={res.website}
+                    Img={res.img}
+                  />
+                </div>
+              );
+            })}
+          </div>
         </div>
-      </div>
-    </ExperiencesStyles>
+      </ExperiencesStyles>
+    </>
   );
 }

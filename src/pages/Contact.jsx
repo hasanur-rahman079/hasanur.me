@@ -17,7 +17,7 @@ import {
 } from "react-icons/si";
 import styled from "styled-components";
 import { SocialIcon } from "../components";
-import { TabTitle } from "../utils/GeneralFunctions";
+import SEO from "../lib/SEO";
 
 const ContactStyle = styled.div`
   .grid__container {
@@ -86,153 +86,155 @@ const ContactStyle = styled.div`
 `;
 
 function Contact() {
-  TabTitle("Follow - MD. Hasanur Rahman");
-
   return (
-    <ContactStyle className="pageContainer">
-      <div className="grid__container">
-        <div className="grid__col">
-          <h3 className="title">Academic/Research Id's</h3>
+    <>
+      <SEO pageTitle="Contact" />
 
-          <div className="icon__container">
-            <div>
-              <SocialIcon
-                url="https://scholar.google.com/citations?hl=en&authuser=1&user=l2q048wAAAAJ"
-                iconCode={<SiGooglescholar />}
-                name="Google Scholar"
-                userName="/MD. Hasanur Rahman"
-              />
-            </div>
+      <ContactStyle className="pageContainer">
+        <div className="grid__container">
+          <div className="grid__col">
+            <h3 className="title">Academic/Research Id's</h3>
 
-            <div>
-              <SocialIcon
-                url="https://www.researchgate.net/profile/Md-Rahman-262"
-                iconCode={<SiResearchgate />}
-                name="ResearchGate"
-                userName="/MD. Hasanur Rahman"
-              />
-            </div>
+            <div className="icon__container">
+              <div>
+                <SocialIcon
+                  url="https://scholar.google.com/citations?hl=en&authuser=1&user=l2q048wAAAAJ"
+                  iconCode={<SiGooglescholar />}
+                  name="Google Scholar"
+                  userName="/MD. Hasanur Rahman"
+                />
+              </div>
 
-            <div>
-              <SocialIcon
-                url="https://www.scopus.com/authid/detail.uri?authorId=57216255896"
-                iconCode={<SiScopus />}
-                name="Scopus"
-                userName="/MD. Hasanur Rahman"
-              />
-            </div>
+              <div>
+                <SocialIcon
+                  url="https://www.researchgate.net/profile/Md-Rahman-262"
+                  iconCode={<SiResearchgate />}
+                  name="ResearchGate"
+                  userName="/MD. Hasanur Rahman"
+                />
+              </div>
 
-            <div>
-              <SocialIcon
-                url="https://www.webofscience.com/wos/author/record/AAX-4023-2020"
-                iconCode={<SiPublons />}
-                name="Publoan"
-                userName="/MD. Hasanur Rahman"
-              />
+              <div>
+                <SocialIcon
+                  url="https://www.scopus.com/authid/detail.uri?authorId=57216255896"
+                  iconCode={<SiScopus />}
+                  name="Scopus"
+                  userName="/MD. Hasanur Rahman"
+                />
+              </div>
+
+              <div>
+                <SocialIcon
+                  url="https://www.webofscience.com/wos/author/record/AAX-4023-2020"
+                  iconCode={<SiPublons />}
+                  name="Publoan"
+                  userName="/MD. Hasanur Rahman"
+                />
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="grid__col">
-          <h3 className="title">Social Id's</h3>
+          <div className="grid__col">
+            <h3 className="title">Social Id's</h3>
 
-          <div className="icon__container">
+            <div className="icon__container">
+              <div>
+                <SocialIcon
+                  url="https://www.facebook.com/hasanur069"
+                  iconCode={<FaFacebook />}
+                  name="Facebook"
+                  userName="/hasanur069"
+                />
+              </div>
+
+              <div>
+                <SocialIcon
+                  url="https://twitter.com/hasanur069"
+                  iconCode={<FaTwitter />}
+                  name="Twitter"
+                  userName="/hasanur069"
+                />
+              </div>
+
+              <div>
+                <SocialIcon
+                  url="https://www.linkedin.com/in/hasanur069/"
+                  iconCode={<FaLinkedin />}
+                  name="LinkedIn"
+                  userName="/hasanur069"
+                />
+              </div>
+
+              <div>
+                <SocialIcon
+                  url="https://www.instagram.com/hasanur069/"
+                  iconCode={<FaInstagram />}
+                  name="Instagram"
+                  userName="/hasanur069"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="grid__col">
+            <h3 className="title">Dev Id's</h3>
+
+            <div className="icon__container">
+              <div>
+                <SocialIcon
+                  url="https://github.com/hasanur-rahman079"
+                  iconCode={<FaGithub />}
+                  name="GitHub"
+                  userName="/hasanur-rahman079"
+                />
+              </div>
+
+              <div>
+                <SocialIcon
+                  url="https://dev.to/hasanurrahman079"
+                  iconCode={<FaDev />}
+                  name="DEV"
+                  userName="/hasanurrahman079"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="grid__col">
+            <h3 className="title">Send anonymous texts</h3>
+
             <div>
               <SocialIcon
-                url="https://www.facebook.com/hasanur069"
-                iconCode={<FaFacebook />}
-                name="Facebook"
+                url="https://ngl.link/hasanur069"
+                iconCode={<RiSpyFill />}
+                name="Anonymous"
                 userName="/hasanur069"
               />
             </div>
+          </div>
 
-            <div>
-              <SocialIcon
-                url="https://twitter.com/hasanur069"
-                iconCode={<FaTwitter />}
-                name="Twitter"
-                userName="/hasanur069"
-              />
-            </div>
+          <div className="grid__col">
+            <h3 className="title">Email Id's</h3>
 
-            <div>
-              <SocialIcon
-                url="https://www.linkedin.com/in/hasanur069/"
-                iconCode={<FaLinkedin />}
-                name="LinkedIn"
-                userName="/hasanur069"
-              />
-            </div>
+            <div className="box__container">
+              <div className="email__box">
+                <a href="mailto:hasanurrahman.bge@gmail.com">
+                  <FaEnvelope className="icon" />
+                  hasanurrahman.bge@gmail.com
+                </a>
+              </div>
 
-            <div>
-              <SocialIcon
-                url="https://www.instagram.com/hasanur069/"
-                iconCode={<FaInstagram />}
-                name="Instagram"
-                userName="/hasanur069"
-              />
+              <div className="email__box">
+                <a href="mailto:hasan079@bsmrstu.edu.bd">
+                  <FaEnvelope className="icon" />
+                  hasan079@bsmrstu.edu.bd
+                </a>
+              </div>
             </div>
           </div>
         </div>
-
-        <div className="grid__col">
-          <h3 className="title">Dev Id's</h3>
-
-          <div className="icon__container">
-            <div>
-              <SocialIcon
-                url="https://github.com/hasanur-rahman079"
-                iconCode={<FaGithub />}
-                name="GitHub"
-                userName="/hasanur-rahman079"
-              />
-            </div>
-
-            <div>
-              <SocialIcon
-                url="https://dev.to/hasanurrahman079"
-                iconCode={<FaDev />}
-                name="DEV"
-                userName="/hasanurrahman079"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="grid__col">
-          <h3 className="title">Send anonymous texts</h3>
-
-          <div>
-            <SocialIcon
-              url="https://ngl.link/hasanur069"
-              iconCode={<RiSpyFill />}
-              name="Anonymous"
-              userName="/hasanur069"
-            />
-          </div>
-        </div>
-
-        <div className="grid__col">
-          <h3 className="title">Email Id's</h3>
-
-          <div className="box__container">
-            <div className="email__box">
-              <a href="mailto:hasanurrahman.bge@gmail.com">
-                <FaEnvelope className="icon" />
-                hasanurrahman.bge@gmail.com
-              </a>
-            </div>
-
-            <div className="email__box">
-              <a href="mailto:hasan079@bsmrstu.edu.bd">
-                <FaEnvelope className="icon" />
-                hasan079@bsmrstu.edu.bd
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </ContactStyle>
+      </ContactStyle>
+    </>
   );
 }
 

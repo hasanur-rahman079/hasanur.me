@@ -1,16 +1,29 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 function Pulmx({ doiUrl }) {
   return (
-    <div>
-      <a
-        href={`https://plu.mx/plum/a/?doi=${doiUrl}`}
-        className="plumx-plum-print-popup"
-        target="__blank"
-      >
-        PulmX
-      </a>
-    </div>
+    <>
+      <Helmet>
+        {/* Plumx */}
+        <script
+          type="text/javascript"
+          src="https://cdn.plu.mx/widget-popup.js"
+          crossorigin="anonymous"
+        ></script>
+      </Helmet>
+
+      <div>
+        <a
+          href={`https://plu.mx/plum/a/?doi=${doiUrl}`}
+          className="plumx-plum-print-popup"
+          data-size="medium"
+          target="__blank"
+        >
+
+        </a>
+      </div>
+    </>
   );
 }
 

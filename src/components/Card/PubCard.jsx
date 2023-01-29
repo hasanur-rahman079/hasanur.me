@@ -80,17 +80,25 @@ const PubItemsStyles = styled.div`
             margin-top: 5px;
 
             .contents {
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-
-              span {
-                font-size: 1.4rem;
-                font-weight: 500;
-              }
+              display: grid;
+              grid-template-rows: 2;
+              grid-gap: 1.4rem;
 
               .icons {
                 display: flex;
+                align-items: center;
+
+                span {
+                  font-size: 1.4rem;
+                  font-weight: 500;
+                  margin-right: 0.5rem;
+                }
+
+                .badges {
+                  display: flex;
+                  align-items: center;
+                  gap: 2rem;
+                }
               }
             }
           }
@@ -222,87 +230,94 @@ export default function PubCard() {
   }
 
   return (
-    <PubItemsStyles>
-      <h2 className="total__Pub">Total Publications: {work.length}</h2>
+    <>
+      <PubItemsStyles>
+        <h2 className="total__Pub">Total Publications: {work.length}</h2>
 
-      <div className="pubItems_info">
-        {work &&
-          work.map((works, index) => {
-            const pub = works["work-summary"][0];
-            const jtitle = pub["journal-title"];
-            const pdate = pub["publication-date"] || [];
-            const ids = pub["external-ids"];
-            const authors = pub["put-code"];
+        <div className="pubItems_info">
+          {work &&
+            work.map((works, index) => {
+              const pub = works["work-summary"][0];
+              const jtitle = pub["journal-title"];
+              const pdate = pub["publication-date"] || [];
+              const ids = pub["external-ids"];
+              const authors = pub["put-code"];
 
-            // console.log(pub);
+              // console.log(pub);
 
-            return (
-              <div className="allPub" key={index}>
-                {isError !== "" && <h2>{isError}</h2>}
+              return (
+                <div className="allPub" key={index}>
+                  {isError !== "" && <h2>{isError}</h2>}
 
-                <div className="pubContainer">
-                  <div className="cardHeader">
-                    <span className="typeTag">
-                      {pub.type.replaceAll("-", " ").charAt(0).toUpperCase() +
-                        pub.type.replaceAll("-", " ").slice(1)}
-                    </span>
+                  <div className="pubContainer">
+                    <div className="cardHeader">
+                      <span className="typeTag">
+                        {pub.type.replaceAll("-", " ").charAt(0).toUpperCase() +
+                          pub.type.replaceAll("-", " ").slice(1)}
+                      </span>
 
-                    <div className="pubDate">
-                      <span className="date">{(pdate.day || []).value}</span>-
-                      <span className="date">{(pdate.month || []).value}</span>-
-                      <span className="date">{(pdate.year || []).value}</span>
+                      <div className="pubDate">
+                        <span className="date">{(pdate.day || []).value}</span>-
+                        <span className="date">
+                          {(pdate.month || []).value}
+                        </span>
+                        -
+                        <span className="date">{(pdate.year || []).value}</span>
+                      </div>
+
+                      <p className="journal">
+                        <span className="jName">{(jtitle || []).value}</span>
+                      </p>
                     </div>
 
-                    <p className="journal">
-                      <span className="jName">{(jtitle || []).value}</span>
-                    </p>
-                  </div>
+                    <div className="cardBody">
+                      <h3 className="pubtitle">{pub.title.title.value}</h3>
 
-                  <div className="cardBody">
-                    <h3 className="pubtitle">{pub.title.title.value}</h3>
+                      <Putcode putCodePath={authors} />
+                    </div>
 
-                    <Putcode putCodePath={authors} />
-                  </div>
+                    <div className="cardFooter">
+                      <div className="metrics">
+                        {ids["external-id"] &&
+                          ids["external-id"].map((doi, index) => {
+                            // const doiurl = doi["external-id-url"];
+                            const idType = doi["external-id-type"];
+                            const doivalue = doi["external-id-value"];
 
-                  <div className="cardFooter">
-                    <div className="metrics">
-                      {ids["external-id"] &&
-                        ids["external-id"].map((doi, index) => {
-                          // const doiurl = doi["external-id-url"];
-                          const idType = doi["external-id-type"];
-                          const doivalue = doi["external-id-value"];
+                            // console.log(doi);
 
-                          // console.log(doi);
+                            return (
+                              <div key={index}>
+                                {idType === "doi" ? (
+                                  <div className="contents">
+                                    <div className="doi">
+                                      <Doi title={doivalue} link={doivalue} />
+                                    </div>
 
-                          return (
-                            <div key={index}>
-                              {idType === "doi" ? (
-                                <div className="contents">
-                                  <div className="doi">
-                                    <Doi title={doivalue} link={doivalue} />
+                                    <div className="icons">
+                                      <span>Citations & Metrics: </span>
+
+                                      <div className="badges">
+                                        <Pulmx doiUrl={doivalue} />
+
+                                        <DiBadge doi={doivalue} />
+
+                                        <Altmetric doi={doivalue} />
+                                      </div>
+                                    </div>
                                   </div>
-
-                                  <div className="icons">
-                                    <span>Citations & Metrics: </span>
-
-                                    <Pulmx doiUrl={doivalue} />
-
-                                    <DiBadge doi={doivalue} />
-
-                                    <Altmetric doi={doivalue} />
-                                  </div>
-                                </div>
-                              ) : null}
-                            </div>
-                          );
-                        })}
+                                ) : null}
+                              </div>
+                            );
+                          })}
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-      </div>
-    </PubItemsStyles>
+              );
+            })}
+        </div>
+      </PubItemsStyles>
+    </>
   );
 }

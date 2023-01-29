@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { PageTitle, PubCard } from "../components";
 import { StatSection } from "../container";
-import { TabTitle } from "../utils/GeneralFunctions";
+import SEO from "../lib/SEO";
 // import { MdSearch } from "react-icons/md";
 // import statData from "../constants";
 
@@ -44,8 +44,6 @@ const PublicationsStyles = styled.div`
 `;
 
 export default function Research() {
-  TabTitle("Research - MD. Hasanur Rahman");
-
   // capture the search text that we'll search in the input box
   // calling all the data from stat data by using useState (hook) N.B. Dont forget to import the hook here
   // const [pubData, setPubdata] = useState(PubInfo);
@@ -73,8 +71,11 @@ export default function Research() {
   // }  // const [searchText, setSearchText] = useState("");
 
   return (
-    <PublicationsStyles className="pageContainer">
-      {/* <div className="container">
+    <>
+      <SEO pageTitle="Activities" />
+
+      <PublicationsStyles className="pageContainer">
+        {/* <div className="container">
         <SectionTitle
           title="Publications"
           subTitle="Find my recent publications here"
@@ -96,13 +97,14 @@ export default function Research() {
           </form>
         </div> */}
 
-      <PageTitle pageTitle="Research Records" />
+        <PageTitle pageTitle="Research Records" />
 
-      <StatSection />
+        <StatSection />
 
-      <div className="allpub">
-        <PubCard />
-      </div>
-    </PublicationsStyles>
+        <div className="allpub">
+          <PubCard />
+        </div>
+      </PublicationsStyles>
+    </>
   );
 }
