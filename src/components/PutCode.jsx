@@ -15,6 +15,10 @@ const PutcodeStyle = styled.div`
       line-height: 2.2rem;
       font-weight: 400;
     }
+
+    .highlighted {
+      font-weight: 600;
+    }
   }
 
   @media only screen and (max-width: 768px) {
@@ -58,9 +62,15 @@ function Putcode({ putCodePath }) {
 
                     return (
                       <div key={index}>
-                        <div className="authorsList">
+                        <div
+                          className={`authorsList ${
+                            (nameList.value === 'MD. Hasanur Rahman' || nameList.value === 'Md. Hasanur Rahman')
+                              ? "highlighted"
+                              : ""
+                          }`}
+                        >
                           {nameList.value}
-                          {index ? ", " : " "}
+                          {index !== name.length - 1 ? ", " : " "}
                         </div>
                       </div>
                     );

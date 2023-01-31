@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import DoiImg from "../../assets/images/DOI_logo.png";
+// import DoiImg from "../../assets/images/DOI_logo.png";
 
 const DoiStyle = styled.div`
   display: flex;
@@ -27,9 +27,9 @@ const DoiStyle = styled.div`
 function Doi({ link, title }) {
   return (
     <DoiStyle>
-      <img className="icon" src={DoiImg} alt="DOI logo" />
+      {/* <img className="icon" src={DoiImg} alt="DOI logo" /> */}
       <a className="doi" href={`https://doi.org/${link}`} target="__blank">
-        {title}
+        Doi: {title}
       </a>
     </DoiStyle>
   );

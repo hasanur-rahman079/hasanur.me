@@ -1,11 +1,11 @@
-import heroImgNew from "../assets/images/hero-img-new.png";
-import heroImg from "../assets/images/hasan.png";
+// import heroImgNew from "../assets/images/hero-img-new.png";
+// import heroImg from "../assets/images/hasan.png";
 import heroHasanur from "../assets/images/hasanur.jpg";
 import aboutImg from "../assets/images/about_me.png";
 import ccj from "../assets/images/ccj.png";
 import bsmrstu from "../assets/images/bsmrstu.png";
 import demo from "../assets/images/Blank_image.png";
-import doiLogo from "../assets/images/DOI_logo.png";
+// import doiLogo from "../assets/images/DOI_logo.png";
 
 // Gallary images
 import wOne from "../assets/images/gallary/workShop1.jpg";
@@ -24,13 +24,13 @@ import c4 from "../assets/images/gallary/c4.jpg";
 
 const images = {
   heroHasanur,
-  heroImgNew,
-  heroImg,
+  // heroImgNew,
+  // heroImg,
   aboutImg,
   ccj,
   bsmrstu,
   demo,
-  doiLogo,
+  // doiLogo,
   wOne,
   w1,
   w2,

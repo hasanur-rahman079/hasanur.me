@@ -1,4 +1,5 @@
 import axios from "axios";
+import moment from "moment";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import {
@@ -96,6 +97,7 @@ const PubItemsStyles = styled.div`
 
                 .badges {
                   display: flex;
+                  flex-flow: wrap;
                   align-items: center;
                   gap: 2rem;
                 }
@@ -176,7 +178,29 @@ const PubItemsStyles = styled.div`
 
                 .icons {
                   display: flex;
-                  grid-column: 1/2;
+                  flex-direction: column;
+                  gap: 1rem;
+                  align-items: flex-start;
+
+                  .badges {
+                    display: grid;
+                    grid-template-columns: 3fr;
+                    gap: 2rem;
+                    width: 100%;
+
+                    .pulmx {
+                      display: grid;
+                      grid-column: 1/2;
+                    }
+                    .dimention {
+                      display: grid;
+                      grid-column: 2/3;
+                    }
+                    .altmetric {
+                      display: grid;
+                      grid-column: 3/4;
+                    }
+                  }
                 }
               }
             }
@@ -193,37 +217,33 @@ export default function PubCard() {
   const [loading, setLoading] = useState(false);
 
   // using Promises
-  useEffect(() => {
-    setLoading(true);
-    axios
-      .get("https://pub.orcid.org/v3.0/0000-0001-9238-3149/works", {
-        headers: {
-          Accept: "application/json",
-        },
-      })
-      .then((response) => setwork(response.data.group))
-      .catch((error) => setIsError(error.message))
-      .finally(() => setLoading(false));
-  }, []);
-
   // useEffect(() => {
-  //   setTimeout(async () => {
-  //     const res = await axios.get(
-  //       "https://pub.orcid.org/v3.0/0000-0001-9238-3149/works",
-  //       {
-  //         headers: {
-  //           Accept: "application/json",
-  //         },
-  //       }
-  //     );
-  //     const dataOut = await res.json();
-  //     setwork(dataOut.data.group);
-  //   }, 5000);
-  // });
+  //   setLoading(true);
+  //   axios
+  //     .get("https://pub.orcid.org/v3.0/0000-0001-9238-3149/works", {
+  //       headers: {
+  //         Accept: "application/json",
+  //       },
+  //     })
+  //     .then((response) => setwork(response.data.group))
+  //     .catch((error) => setIsError(error.message))
+  //     .finally(() => setLoading(false));
+  // }, []);
 
-  // console.log(work.length);
-
-  // console.log(work);
+  useEffect(() => {
+    if (work.length === 0) {
+      setLoading(true);
+      axios
+        .get("https://pub.orcid.org/v3.0/0000-0001-9238-3149/works", {
+          headers: {
+            Accept: "application/json",
+          },
+        })
+        .then((response) => setwork(response.data.group))
+        .catch((error) => setIsError(error.message))
+        .finally(() => setLoading(false));
+    }
+  }, [work]);
 
   if (loading) {
     return <Loading />;
@@ -243,7 +263,10 @@ export default function PubCard() {
               const ids = pub["external-ids"];
               const authors = pub["put-code"];
 
-              // console.log(pub);
+              const pubDate = moment(
+                `${pdate.month?.value}-${pdate.year?.value}`,
+                "MM-YYYY"
+              ).format("MMM, YYYY");
 
               return (
                 <div className="allPub" key={index}>
@@ -257,12 +280,7 @@ export default function PubCard() {
                       </span>
 
                       <div className="pubDate">
-                        <span className="date">{(pdate.day || []).value}</span>-
-                        <span className="date">
-                          {(pdate.month || []).value}
-                        </span>
-                        -
-                        <span className="date">{(pdate.year || []).value}</span>
+                        <span className="date">{pubDate}</span>
                       </div>
 
                       <p className="journal">
@@ -280,11 +298,8 @@ export default function PubCard() {
                       <div className="metrics">
                         {ids["external-id"] &&
                           ids["external-id"].map((doi, index) => {
-                            // const doiurl = doi["external-id-url"];
                             const idType = doi["external-id-type"];
                             const doivalue = doi["external-id-value"];
-
-                            // console.log(doi);
 
                             return (
                               <div key={index}>
@@ -298,11 +313,15 @@ export default function PubCard() {
                                       <span>Citations & Metrics: </span>
 
                                       <div className="badges">
-                                        <Pulmx doiUrl={doivalue} />
-
-                                        <DiBadge doi={doivalue} />
-
-                                        <Altmetric doi={doivalue} />
+                                        <div className="pulmx">
+                                          <Pulmx doiUrl={doivalue} />
+                                        </div>
+                                        <div className="dimention">
+                                          <DiBadge doi={doivalue} />
+                                        </div>
+                                        <div className="altmetric">
+                                          <Altmetric doi={doivalue} />
+                                        </div>
                                       </div>
                                     </div>
                                   </div>

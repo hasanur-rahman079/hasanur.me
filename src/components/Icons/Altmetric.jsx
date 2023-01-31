@@ -13,7 +13,7 @@ function Altmetric({ doi }) {
       </Helmet>
 
       <div
-        data-badge-popover="right"
+        data-badge-popover="left"
         data-badge-type="2"
         data-doi={doi}
         data-condensed="true"

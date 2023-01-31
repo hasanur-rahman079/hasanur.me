@@ -1,4 +1,5 @@
 import axios from "axios";
+import moment from "moment";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Putcode, Doi, Pulmx, DiBadge, Altmetric, Loading } from "..";
@@ -78,6 +79,7 @@ const PubItemsStyles = styled.div`
 
                 .badges {
                   display: flex;
+                  flex-flow: wrap;
                   align-items: center;
                   gap: 2rem;
                 }
@@ -154,7 +156,29 @@ const PubItemsStyles = styled.div`
 
                 .icons {
                   display: flex;
-                  grid-column: 1/2;
+                  flex-direction: column;
+                  gap: 1rem;
+                  align-items: flex-start;
+
+                  .badges {
+                    display: grid;
+                    grid-template-columns: 3fr;
+                    gap: 2rem;
+                    width: 100%;
+
+                    .pulmx {
+                      display: grid;
+                      grid-column: 1/2;
+                    }
+                    .dimention {
+                      display: grid;
+                      grid-column: 2/3;
+                    }
+                    .altmetric {
+                      display: grid;
+                      grid-column: 3/4;
+                    }
+                  }
                 }
               }
             }
@@ -165,7 +189,7 @@ const PubItemsStyles = styled.div`
   }
 `;
 
-export default function PubCardSlice() {
+export default function PubCardSlice({ formattedDate }) {
   const [work, setwork] = useState([]);
   const [isError, setIsError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -201,6 +225,15 @@ export default function PubCardSlice() {
             const ids = pub["external-ids"];
             const authors = pub["put-code"];
 
+            // const formattedDate = `${pdate.month?.value || ""} - ${
+            //   pdate.year?.value || ""
+            // }`;
+
+            const pubDate = moment(
+              `${pdate.month?.value}-${pdate.year?.value}`,
+              "MM-YYYY"
+            ).format("MMM, YYYY");
+
             // console.log(pub);
 
             return (
@@ -215,9 +248,10 @@ export default function PubCardSlice() {
                     </span>
 
                     <div className="pubDate">
-                      <span className="date">{(pdate.day || []).value}</span>-
+                      {/* <span className="date">{(pdate.day || []).value}</span>-
                       <span className="date">{(pdate.month || []).value}</span>-
-                      <span className="date">{(pdate.year || []).value}</span>
+                      <span className="date">{(pdate.year || []).value}</span> */}
+                      <span className="date">{pubDate}</span>
                     </div>
 
                     <p className="journal">
@@ -253,11 +287,15 @@ export default function PubCardSlice() {
                                     <span>Citations & Metrics: </span>
 
                                     <div className="badges">
-                                      <Pulmx doiUrl={doivalue} />
-
-                                      <DiBadge doi={doivalue} />
-
-                                      <Altmetric doi={doivalue} />
+                                      <div className="pulmx">
+                                        <Pulmx doiUrl={doivalue} />
+                                      </div>
+                                      <div className="dimention">
+                                        <DiBadge doi={doivalue} />
+                                      </div>
+                                      <div className="altmetric">
+                                        <Altmetric doi={doivalue} />
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
